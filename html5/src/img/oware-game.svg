@@ -1,0 +1,2101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!--
+Logos and trademarks belong to their respective owners.
+
+Source code including HMTL, Javascript, CSS is under MIT License
+
+  The MIT License (MIT)
+
+  Copyright (c) 2014 Oliver Merkel
+
+  @author Oliver Merkel, &lt;Merkel(dot)Oliver(at)web(dot)de&gt;
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of
+  this software and associated documentation files (the &quot;Software&quot;), to deal in
+  the Software without restriction, including without limitation the rights to
+  use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+  the Software, and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+  FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+If not otherwise stated all game graphics (indepedend of its format) are licensed under
+
+  Creative Commons License: Images are licensed under a
+  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+  
+  * http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US
+-->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   viewBox="0 0 1200 676"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="oware-game.svg">
+  <title
+     id="title3060">Oware</title>
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.64"
+     inkscape:cx="361.97183"
+     inkscape:cy="349.49919"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="844"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Oware</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       y="0"
+       x="0"
+       id="board"
+       xlink:href="board01.png"
+       height="676"
+       width="1200" />
+    <g
+       id="scores"
+       transform="translate(610,325)">
+      <g
+         id="scoresouth"
+         transform="translate(300,250)">
+        <image
+           sodipodi:absref="C:\community\oware\html5\src\img\bonduc01-256.png"
+           xlink:href="bonduc01-256.png"
+           width="34"
+           height="30"
+           id="scoresouthbead"
+           x="0"
+           y="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial, Helvetica, sans-serif"
+           x="50"
+           y="40"
+           id="scoresouthtext"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="scoresouthvalue"
+             x="50"
+             y="36"
+             style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold">0</tspan></text>
+      </g>
+      <g
+         transform="matrix(-1,0,0,-1,-300,-250)"
+         id="scorenorth">
+        <image
+           sodipodi:absref="C:\community\oware\html5\src\img\bonduc01-256.png"
+           xlink:href="bonduc01-256.png"
+           y="0"
+           x="0"
+           id="scorenorthbead"
+           height="30"
+           width="34" />
+        <text
+           sodipodi:linespacing="125%"
+           id="scorenorthtext"
+           y="40"
+           x="50"
+           style="font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial, Helvetica, sans-serif"
+           xml:space="preserve"><tspan
+             style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+             y="36"
+             x="50"
+             id="scorenorthvalue"
+             sodipodi:role="line">0</tspan></text>
+      </g>
+    </g>
+    <g
+       id="playersouth">
+      <g
+         id="bowl00"
+         transform="translate(80,334) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl00bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl00bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl00bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl00bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl00bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl00bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl00bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl00bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl00bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl00bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl00bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl00bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl00bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl00bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl00bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl00bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl00bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl00bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl00bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl00bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl00bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl01"
+         transform="translate(256,336) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl01bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl01bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl01bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl01bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl01bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl01bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl01bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl01bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl01bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl01bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl01bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl01bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl01bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl01bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl01bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl01bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl01bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl01bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl01bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl01bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl01bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl02"
+         transform="translate(433,338) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl02bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl02bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl02bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl02bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl02bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl02bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl02bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl02bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl02bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl02bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl02bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl02bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl02bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl02bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl02bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl02bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl02bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl02bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl02bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl02bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl02bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl03"
+         transform="translate(614,336) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl03bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl03bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl03bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl03bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl03bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl03bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl03bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl03bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl03bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl03bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl03bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl03bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl03bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl03bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl03bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl03bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl03bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl03bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl03bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl03bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl03bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl04"
+         transform="translate(796,340) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl04bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl04bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl04bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl04bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl04bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl04bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl04bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl04bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl04bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl04bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl04bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl04bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl04bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl04bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl04bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl04bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl04bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl04bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl04bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl04bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl04bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl05"
+         transform="translate(976,342) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl05bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl05bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl05bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl05bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl05bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl05bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl05bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl05bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl05bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl05bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl05bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl05bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl05bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl05bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl05bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl05bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl05bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl05bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl05bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl05bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl05bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+    </g>    <g
+       id="playernorth">
+      <g
+         id="bowl11"
+         transform="translate(79,148) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl11bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl11bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl11bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl11bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl11bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl11bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl11bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl11bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl11bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl11bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl11bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl11bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl11bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl11bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl11bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl11bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl11bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl11bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl11bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl11bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl11bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl10"
+         transform="translate(258,150) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl10bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl10bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl10bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl10bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl10bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl10bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl10bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl10bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl10bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl10bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl10bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl10bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl10bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl10bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl10bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl10bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl10bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl10bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl10bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl10bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl10bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl09"
+         transform="translate(438,154) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl09bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl09bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl09bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl09bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl09bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl09bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl09bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl09bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl09bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl09bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl09bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl09bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl09bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl09bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl09bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl09bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl09bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl09bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl09bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl09bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl09bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl08"
+         transform="translate(618,155) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl08bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl08bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl08bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl08bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl08bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl08bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl08bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl08bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl08bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl08bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl08bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl08bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl08bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl08bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl08bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl08bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl08bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl08bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl08bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl08bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl08bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl07"
+         transform="translate(800,158) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl07bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl07bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl07bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl07bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl07bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl07bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl07bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl07bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl07bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl07bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl07bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl07bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl07bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl07bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl07bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl07bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl07bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl07bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl07bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl07bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl07bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+      <g
+         id="bowl06"
+         transform="translate(982,160) scale(0.57)">
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc00.png"
+           id="bowl06bonduc00"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc01.png"
+           id="bowl06bonduc01"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc02.png"
+           id="bowl06bonduc02"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc03.png"
+           id="bowl06bonduc03"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc04.png"
+           id="bowl06bonduc04"
+           visibility="visible"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc05.png"
+           id="bowl06bonduc05"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc06.png"
+           id="bowl06bonduc06"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc07.png"
+           id="bowl06bonduc07"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc08.png"
+           id="bowl06bonduc08"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc09.png"
+           id="bowl06bonduc09"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc10.png"
+           id="bowl06bonduc10"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc11.png"
+           id="bowl06bonduc11"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc12.png"
+           id="bowl06bonduc12"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc13.png"
+           id="bowl06bonduc13"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc14.png"
+           id="bowl06bonduc14"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <image
+           width="300"
+           height="287"
+           xlink:href="trou-bonduc15.png"
+           id="bowl06bonduc15"
+           visibility="hidden"
+           x="0"
+           y="0" />
+        <g
+           id="bowl06bonduc15plus"
+           transform="translate(150,150)">
+          <text
+             sodipodi:linespacing="125%"
+             id="bowl06bonduc15plus1"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"
+             transform="translate(-150,100)"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl06bonduc15plus1text"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="matrix(-1,0,0,-1,150,-100)"
+             sodipodi:linespacing="125%"
+             id="bowl06bonduc15plus2"
+             y="0"
+             x="0"
+             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
+               y="0"
+               x="0"
+               id="bowl06bonduc15plus2text"
+               sodipodi:role="line">16</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
