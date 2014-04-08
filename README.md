@@ -48,9 +48,9 @@ the player is allowed to start his turns by picking up all _tokens_ from
 any non empty bowl being controlled by himself.
 
 The rules currently realized in this software project are commonly
-known as Oware, Awari, Wari, Awélé, Awalé, Aualé, Ayò depending
+known as Oware, Awari, Wari, AwÃ©lÃ©, AwalÃ©, AualÃ©, AyÃ² depending
 on the geographic origin and language spoken (Ghana, Yoruba,
-Nigeria, Côte d'Ivoire, Cabo Verde, plus other regions). These
+Nigeria, CÃ´te d'Ivoire, Cabo Verde, plus other regions). These
 rules will be described inside the Oware application as well.
 
 ### Oware Rules
@@ -121,4 +121,3 @@ is quite traditional, too.
 Surely some priceless unique or antique Oware sets up to the size of a
 whole table can be found. Watch out and find some of these gems using
 your preferred web search engine.
-
