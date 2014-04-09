@@ -57,44 +57,44 @@ rules will be described inside the Oware application as well.
 
 This Oware implementation uses a game board with 12 bowls in
 total - consisting of 2 rows having 6 bowls each. Initially
-each bowl holds 4 tokens (Bonduc seeds).
+each bowl holds 4 Bonduc seeds.
 
 Players' turn alternates between the two players. The player
 starts own sowing turns from a non empty bowl of his choice
-in the row next to his own side. Still he will sow beads on
+in the row next to his own side. Still he will sow seeds on
 the other player's row, too. Sowing is performed with exactly one
-bead per bowl following the consecutive bowls in counter clockwise
+seed per bowl following the consecutive bowls in counter clockwise
 direction. In case the sowing will reach the starting bowl of
 the turn again then this bowl is skipped each time. Such that
 this bowl will remain empty in the end of this player's turn.
 
 A player will score (also called _harvesting_) on sowing the last
-bead of his turn into an opponent's bowl holding 2 or 3 beads
-including the last bead sown. This is done by taking these beads
+seed of his turn into an opponent's bowl holding 2 or 3 seeds
+including the last one sown. This is done by taking these seeds
 out of game play and scoring these. In case of previous direct
 adjacent bowls (in clockwise direction) being opponent's bowls, too,
-holding 2 or 3 beads, these are taken away being scored as well.
-Reaching any other bowl without any bead, just one bead or four
-or more beads will end the scoring even if there are following
-opponent's bowls left containing 2 or 3 beads not being
+holding 2 or 3 seeds, these are taken away being scored as well.
+Reaching any other bowl without any seed, just one seed or four
+or more seeds will end the scoring even if there are following
+opponent's bowls left containing 2 or 3 seeds not being
 directly adjacent.
 
-Taking and scoring all remaining beads of the opponent's row
+Taking and scoring all remaining seeds of the opponent's row
 completely at once is strictly forbidden and the player will
 lose immediately. Even if the player gets the majority of total
-beads this way the player will lose immediately. Thus after
-scoring at least one bead must be left over on the opponent's row.
+seeds this way the player will lose immediately. Thus after
+scoring at least one seed must be left over on the opponent's row.
 
-Assumed the opponent ends his turn removing the last bead on his row
+Assumed the opponent ends his turn removing the last seed on his row
 by himself: The opponent's move is totally valid and game continues.
 In such a case then a player is not allowed to end his turn without a
-remaining bead for the opponent's turn if avoidable. Such that the
-player is forced to prefer any move that gives at least one bead
+remaining seed for the opponent's turn if avoidable. Such that the
+player is forced to prefer any move that gives at least one seed
 being sown in an opponent's bowl then. In case this is not possible
 the game ends and the player with the higher score wins.
 
 By mutual agreement players can end the game, too, at any time.
-In that case each player scores the remaining beads on the own row.
+In that case each player scores the remaining seeds on the own row.
 The player scoring higher wins.
 
 Which means that the game could be a draw.
