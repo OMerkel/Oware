@@ -57,7 +57,7 @@ rules will be described inside the Oware application as well.
 
 This Oware implementation uses a game board with 12 bowls in
 total - consisting of 2 rows having 6 bowls each. Initially
-each bowl holds 4 beads (Bonduc seeds).
+each bowl holds 4 tokens (Bonduc seeds).
 
 Players' turn alternates between the two players. The player
 starts own sowing turns from a non empty bowl of his choice
