@@ -116,21 +116,18 @@ If not otherwise stated all game graphics (indepedend of its format) are license
            xlink:href="bonduc01-256.png"
            width="34"
            height="30"
-           id="scoresouthbead"
-           x="0"
-           y="0" />
+           id="scoresouthbead" />
         <text
-           xml:space="preserve"
-           style="font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial, Helvetica, sans-serif"
+           sodipodi:linespacing="125%"
+           id="scoresouthvalue"
            x="50"
-           y="40"
-           id="scoresouthtext"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="scoresouthvalue"
-             x="50"
-             y="36"
-             style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold">0</tspan></text>
+           y="36"
+           style="font-size:64px;font-style:normal;font-weight:bold;
+             line-height:125%;letter-spacing:0px;word-spacing:0px;
+             fill:#ffcc00;fill-opacity:1;stroke:none;
+             font-family:Arial, Helvetica, sans-serif;
+             -inkscape-font-specification:Sans Bold"
+           xml:space="preserve">0</text>
       </g>
       <g
          transform="matrix(-1,0,0,-1,-300,-250)"
@@ -138,23 +135,20 @@ If not otherwise stated all game graphics (indepedend of its format) are license
         <image
            sodipodi:absref="C:\community\oware\html5\src\img\\bonduc01-256.png"
            xlink:href="bonduc01-256.png"
-           y="0"
-           x="0"
            id="scorenorthbead"
            height="30"
            width="34" />
         <text
            sodipodi:linespacing="125%"
-           id="scorenorthtext"
-           y="40"
+           id="scorenorthvalue"
            x="50"
-           style="font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial, Helvetica, sans-serif"
-           xml:space="preserve"><tspan
-             style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
-             y="36"
-             x="50"
-             id="scorenorthvalue"
-             sodipodi:role="line">0</tspan></text>
+           y="36"
+           style="font-size:64px;font-style:normal;font-weight:bold;
+             line-height:125%;letter-spacing:0px;word-spacing:0px;
+             fill:#ffcc00;fill-opacity:1;stroke:none;
+             font-family:Arial, Helvetica, sans-serif;
+             -inkscape-font-specification:Sans Bold"
+           xml:space="preserve">0</text>
       </g>
     </g>
 ${svgBoard}
@@ -181,31 +175,25 @@ moreBonducTemplate = Template("""        <g
            id="bowl${bowl}bonduc15plus"
            transform="translate(150,150)">
           <text
+             transform="translate(-150,100)"
              sodipodi:linespacing="125%"
-             id="bowl${bowl}bonduc15plus1"
-             y="0"
-             x="0"
-             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
-             xml:space="preserve"
-             transform="translate(-150,100)"><tspan
-               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
-               y="0"
-               x="0"
-               id="bowl${bowl}bonduc15plus1text"
-               sodipodi:role="line">16</tspan></text>
+             id="bowl${bowl}bonduc15plus1text"
+             style="font-size:72px;font-style:normal;font-weight:bold;
+               line-height:125%;letter-spacing:0px;word-spacing:0px;
+               fill:#ffcc00;fill-opacity:1;
+               font-family:Arial, Helvetica, sans-serif;
+               -inkscape-font-specification:Sans Bold"
+             xml:space="preserve">16</text>
           <text
              transform="matrix(-1,0,0,-1,150,-100)"
              sodipodi:linespacing="125%"
-             id="bowl${bowl}bonduc15plus2"
-             y="0"
-             x="0"
-             style="font-size:72px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Arial, Helvetica, sans-serif"
-             xml:space="preserve"><tspan
-               style="font-weight:bold;fill:#ffff00;stroke:#aa4400;stroke-opacity:1;-inkscape-font-specification:Sans Bold"
-               y="0"
-               x="0"
-               id="bowl${bowl}bonduc15plus2text"
-               sodipodi:role="line">16</tspan></text>
+             id="bowl${bowl}bonduc15plus2text"
+             style="font-size:72px;font-style:normal;font-weight:bold;
+               line-height:125%;letter-spacing:0px;word-spacing:0px;
+               fill:#ffcc00;fill-opacity:1;
+               font-family:Arial, Helvetica, sans-serif;
+               -inkscape-font-specification:Sans Bold"
+             xml:space="preserve">16</text>
         </g>
 """)
 
