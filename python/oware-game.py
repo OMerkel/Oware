@@ -12,7 +12,7 @@ svgTemplate = Template("""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
 Logos and trademarks belong to their respective owners.
 
-Source code including HMTL, Javascript, CSS is under MIT License
+All source code also including code parts written in HMTL, Javascript, CSS, Python is under MIT License.
 
   The MIT License (MIT)
 
