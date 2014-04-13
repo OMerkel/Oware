@@ -97,7 +97,7 @@ By mutual agreement players can end the game, too, at any time.
 In that case each player scores the remaining seeds on the own row.
 The player scoring higher wins.
 
-Which means that the game could be a draw.
+Such that the game could end as a draw on equal scores.
 
 ### Typical Oware Game Material
 
