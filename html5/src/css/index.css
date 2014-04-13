@@ -1,3 +1,7 @@
+.mycontent {
+  padding: 0;
+}
+
 figure.diagram {
   width: 58%;
   max-width: 512px;
