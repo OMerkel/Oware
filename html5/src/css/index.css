@@ -1,7 +1,8 @@
 figure.diagram {
-  width: 30%;
+  width: 58%;
+  max-width: 512px;
   border: 1px solid #cccccc;
-  margin: 0 10px 0 10px;
+  margin: 0 2px 0 2px;
   padding: 2px 12px 2px 2px;
   border-radius: 11px;
 }

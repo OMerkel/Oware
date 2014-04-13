@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head profile="http://dublincore.org/documents/dcq-html/">
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon" />
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8" />
+  <meta name="AUTHOR" content="Oliver Merkel" />
+  <meta name="COPYRIGHT" content="Oliver Merkel" />
+  <meta name="DC.creator" content="Oliver Merkel" />
+  <meta name="DC.contributor" content="Oliver Merkel" />
+  <meta name="DC.rights" content="
+See file named LICENSE being part of the repository.
+
+Copyright (c) 2014
+@author Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de.
+All rights reserved.
+
+Logos and trademarks belong to their respective owners.
+
+All source code also including code parts written in HMTL, Javascript, CSS, Python is under MIT License.
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+If not otherwise stated all game graphics (indepedend of its format) are licensed under
+    http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+" />
+  <title>Oware / Mancala</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    name='viewport' />
+  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.2/jquery.mobile-1.4.2.css' />
+  <link rel='stylesheet' type='text/css' href='css/index.css' />
+  <script src='thirdparty/jquery-1.11.0.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery.mobile-1.4.2/jquery.mobile-1.4.2.js' type='text/javascript'></script>
+  <script src='js/common.js' type='text/javascript'></script>
+  <script src='js/hmi.js' type='text/javascript' defer></script>
+</head>
+<body>
+<div data-role='page' data-theme='b' id='game-page' class='mybackground'>
+  <div data-role='header' data-position='fixed'>
+    <center>Oware</center>
+    <a href='#left-panel' data-icon='bars' data-iconpos='notext'>Navigation</a>
+  </div><!-- /header -->
+  <div role='main' class='ui-content'>
+    <div id='game-region'>
+      <noscript>
+        <p>This HTML5 application depends on enabled Javascript capabilities in your browser.</p>
+        <p>Please consider enabling Javascript if disabled through settings.</p>
+      </noscript>
+      <center>
+        <embed name="board"
+          type="image/svg+xml"
+          src="img/oware-game.svg"
+          width="90%" height="80%" border="1" />
+      </center>
+    </div>
+  </div><!-- /content -->
+  <div data-role='panel' id='left-panel' data-position='left'
+    data-display='overlay' data-theme='b'>
+    <ul data-role='listview' data-theme='b' data-divider-theme='d'
+      data-icon='false' data-global-nav='demos' class='jqm-list'>
+      <li data-icon='back' data-rel='close'><a href='#'>Back</a></li>
+      <li data-role='list-divider'>&nbsp;</li>
+      <li data-icon='star' ><a id='new' href='#'>New</a></li>
+      <li data-icon='action' ><a href='#rules-page'
+        data-transition='pop'>Rules</a></li>
+      <li data-icon='info' ><a href='#about-page'
+        data-transition='pop'>About</a></li>
+    </ul>
+  </div><!-- /panel -->
+</div><!-- /page -->
+<div data-role='page' data-theme='b' id='rules-page'>
+  <div data-role='header'>
+    <a href='#' data-rel='back'
+      class='ui-btn ui-icon-delete ui-btn-icon-right ui-btn-icon-notext ui-corner-all'>Back</a>
+    <h4>Oware Rules</h4>
+  </div><!-- /header -->
+  <div role='main' class='ui-content'>
+    <p><b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
+      is a <em>Mancala (Manquala)</em> game.</p>
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
+      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
+    <div data-role="collapsible">
+      <h4>Mancala and Related Terminology</h4>
+      <p>There is a wide ranged set of the family called <em>Mancala (Manquala)</em>
+        games. Often the term <em>Sowing Games</em> is used, too.</p>
+      <p>The term <em>Mancala (also Manqala, Mankala)</em> is derived from the Arabic
+        term <b>naqalah</b> with its meaning <b>to move</b> an object. These class of
+        games are well known worldwide. Nonetheless rules, structure of fields
+        on board and even number of players strongly varies from game to game
+        depending on geographic location, language and culture. Such that
+        eventually the same game plus rules set could be found under a
+        different name, too. Still the origin seem to be quite clear for
+        specific types at least.</p>
+      <p>The basic ruleset on each player's turn is quite equal as a common
+        aspect of these <em>Mancala</em> games. A turn usually is performed by
+        picking up the whole amount of <em>tokens</em> available on a chosen
+        <em>container</em> on board first. Then this picked up set of mostly
+        one single sort of game <em>tokens</em> is <em>distributed</em> following a
+        <em>path</em> on board formed by such <em>containers</em> holding the <em>tokens</em>.</p>
+       <p><em>Distribution</em> on a player's turn is called <em>sowing</em>. Thus
+         these corresponding games are known as <em>Sowing Games</em>, too.</p>
+       <p>The <em>containers</em> are often being named <em>fields</em>,
+         <em>trou</em> (in <em>French</em>), <em>pits</em>, <em>holes</em>, <em>depressions</em>,
+         <em>houses</em> or <em>bowls</em>. Some games come with different types
+         of such containers. Mostly an additional non standard type
+         of container is just used for holding tokens representing the
+         current player's score. The score is reflected by the amount
+         of tokens contained. These larger size bowls might be named
+         <em>stores</em> or simply <em>Mancalas</em>. If such stores do not exist
+         then tokens might simply be scored by removal from game play
+         staying offboard for the rest of the game.</p>
+       <p>Typically the <em>tokens</em> are represented by some game <em>pieces</em>
+         like <em>seeds</em>, <em>beads</em>, <em>beans</em>, <em>nuts</em>, <em>stones</em>, <em>cowry shells</em>, or
+         any sort of <em>counters</em>. Most Mancala games use undifferentiated <em>tokens</em>.</p>
+       <p>In case of a <em>fixed sowing path</em> the bowls can be indentified or
+         ordered by a simple <em>index numbering</em>. You might find terminology like
+         a player's <em>side</em> or <em>ranks</em> or <em>rows</em> belonging to a player. In that case
+         the player is allowed to start his turns by picking up all <em>tokens</em> from
+         any non empty bowl being controlled by himself.</p>
+       <p>The rules currently realized in this software project are commonly
+         known as Oware, Awari, Wari, Aw&eacute;l&eacute;, Awal&eacute;, Aual&eacute;, Ay&ograve; depending
+         on the geographic origin and language spoken (Ghana, Yoruba,
+         Nigeria, C&ocirc;te d'Ivoire, Cabo Verde, plus other regions). These
+         rules will be described inside the Oware application as well.</p>
+    </div><!-- collapsible -->
+    <div data-role="collapsible">
+      <h4>Oware Rules</h4>
+      <p>This Oware implementation uses a game board with 12 bowls in
+        total - consisting of 2 rows having 6 bowls each. Initially
+        each bowl holds 4 Bonduc seeds.</p>
+      <p>Players' turn alternates between the two players. The player
+        starts own sowing turns from a non empty bowl of his choice
+        in the row next to his own side. Still he will sow seeds on
+        the other player's row, too. Sowing is performed with exactly one
+        seed per bowl following the consecutive bowls in counter clockwise
+        direction. In case the sowing will reach the starting bowl of
+        the turn again then this bowl is skipped each time. Such that
+        this bowl will remain empty in the end of this player's turn.</p>
+      <p>A player will score (also called <em>harvesting</em>) on sowing the last
+        seed of his turn into an opponent's bowl holding 2 or 3 seeds
+        including the last one sown. This is done by taking these seeds
+        out of game play and scoring these. In case of previous direct
+        adjacent bowls (in clockwise direction) being opponent's bowls, too,
+        holding 2 or 3 seeds, these are taken away being scored as well.
+        Reaching any other bowl without any seed, just one seed or four
+        or more seeds will end the scoring even if there are following
+        opponent's bowls left containing 2 or 3 seeds not being
+        directly adjacent.</p>
+      <p>Taking and scoring all remaining seeds of the opponent's row
+        completely at once is strictly forbidden and the player will
+        lose immediately. Even if the player gets the majority of total
+        seeds this way the player will lose immediately. Thus after
+        scoring at least one seed must be left over on the opponent's row.</p>
+      <p>Assumed the opponent ends his turn removing the last seed on his row
+        by himself: The opponent's move is totally valid and game continues.
+        In such a case then a player is not allowed to end his turn without a
+        remaining seed for the opponent's turn if avoidable. Such that the
+        player is forced to prefer any move that gives at least one seed
+        being sown in an opponent's bowl then. In case this is not possible
+        the game ends and the player with the higher score wins.</p>
+      <p>By mutual agreement players can end the game, too, at any time.
+        In that case each player scores the remaining seeds on the own row.
+        The player scoring higher wins.</p>
+      <p>Such that the game could end as a draw on equal scores.</p>
+    </div><!-- collapsible -->
+    <div data-role="collapsible">
+      <h4>Typical Oware Game Material</h4>
+      <p>If you are looking forward to getting a typical <b>Oware game</b> (<em>Ghana</em>)
+        then the chance is quite high that the board shall be made of
+        <b>Sese (Esese, Osese) wood</b> carved manually. Such handcrafted Oware sets
+        are available in simple travel editions made of two similar half boards
+        that can be folded to hold the game tokens securely then. Often these
+        boards come along with decorative crafted and carved traditional themed
+        patterns or motifs. Typical tokens could be <em>nickernuts</em>. These are tropical
+        seeds of a shrub called <b>Bonduc</b> (Latin, botanical: <em>Caesalpinia bonduc</em>).
+        Bonduc seeds are widely used for traditional African jewellery due to it's
+        clay alike precious look and can be found as a medical ingredient as well.
+        Such that there is a good chance of getting a spare set of Bonduc seeds
+        if for some reason yours get incomplete.</p>
+      <p>The more puristic travel edition could be to simply form some pits on a
+        sandy beach and use any type of tokens you prefer of course. This solution
+        is quite traditional, too.</p>
+      <p>Surely some priceless unique or antique Oware sets up to the size of a
+        whole table can be found. Watch out and find some of these gems using
+        your preferred web search engine.</p>
+    </div><!-- collapsible -->
+    </div><!-- collapsible-set -->
+    <a href='#' data-role='button' data-icon='back'
+      data-rel='back'>Back</a>
+  </div><!-- /content -->
+</div><!-- /page -->
+<div data-role='page' data-theme='b' id='about-page'>
+  <div data-role='header'>
+    <a href='#' data-rel='back'
+      class='ui-btn ui-icon-delete ui-btn-icon-right ui-btn-icon-notext ui-corner-all'>Back</a>
+    <h4>About Oware</h4>
+  </div><!-- /header -->
+  <div role='main' class='ui-content'>
+    <h3>Legal</h3>
+    <figure class='diagram' style='float: right;'>
+      <img src='img/oliver_lion.jpg' />
+      <figcaption>Oliver Merkel, <a rel='license'
+        href='http://creativecommons.org/licenses/by-nc-nd/4.0/'
+        target='_blank'>cc-by-nc-nd 4.0</a>.</figcaption>
+    </figure>
+    <p>Copyright (c) 2014<br />
+    <em>@author</em> Oliver Merkel, Merkel(dot) Oliver(at) web(dot) de.<br />
+    All rights reserved.<br />
+    Logos and trademarks belong to their respective owners.</p>
+    <p>All source code also including code parts written in HMTL, Javascript, CSS, Python is under MIT License.</p>
+    <h4>The MIT License (MIT)</h4>
+    <p>Copyright (c) 2014 Oliver Merkel, Merkel(dot) Oliver(at) web(dot)de</p>
+
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the &quot;Software&quot;), to deal in
+    the Software without restriction, including without limitation the rights to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+    the Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:</p>
+
+    <p>The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.</p>
+
+    <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+    <p>If not otherwise stated all game graphics (indepedend of its format) are licensed under
+      <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
+      target="_blank"><img alt="Creative Commons License" style="border-width:0"
+      src="img/icons/cc_by_nc_sa.png" /></a><br />Images are licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
+      target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+      International License</a>.
+    </p>
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
+      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
+    <div data-role="collapsible">
+      <h4>Mancala Priciples and Concepts</h4>
+      <p>The ruleset used in this Oware implementation is in the
+        public domain due to its age and unknown authorship. It is
+        strongly assumed this Mancala game named Oware has its
+        origin in Ghana, Africa. The term Oware is an
+        Akan language term as spoken in Ghana and C&ocirc;te d'Ivoire
+        (Ivory Coast), Western Africa.</p>
+    </div><!-- collapsible -->
+    <div data-role="collapsible">
+      <h4>Third Party Code Licenses</h4>
+      <p>This <b>Oware</b> implementation uses unmodified independend code
+      libraries provided by <em>third parties</em>.
+      Since their licenses might vary the corresponding information is
+      <em>externally linked</em> below. Thus <em>these external links</em>
+      will enable you to reproduce any copyright notice,
+      any related list of conditions, disclaimers, and especially
+      the copyright holders and authors of the corresponding third
+      party functionality.</p>
+      <a href="https://github.com/jquery/jquery" data-role="button" data-theme="c"
+        rel="external" target="_blank" type="text/html"
+        title="jQuery - Repository">
+        <img src="thirdparty/jquery-favicon.ico" />
+        jQuery: MIT</a>
+      <a href="https://github.com/jquery/jquery-mobile" data-role="button" data-theme="c"
+        rel="external" target="_blank" type="text/html"
+        title="jQuery Mobile - Repository">
+        <img src="thirdparty/jquery.mobile-1.4.2/demos/favicon.ico" />
+        jQuery Mobile: MIT</a>
+    </div><!-- collapsible -->
+    </div><!-- collapsible-set -->
+    <a href='#' data-role='button' data-icon='back'
+      data-rel='back'>Back</a>
+  </div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

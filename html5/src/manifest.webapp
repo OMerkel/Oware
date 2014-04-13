@@ -1,0 +1,23 @@
+{
+  "version": "0.1",
+  "name": "Oware",
+  "description": "Oware",
+  "launch_path": "/index.html",
+  "orientation": "landscape-primary",
+  "icons": {
+    "16": "/img/icons/icon-bonduc-16.png",
+    "32": "/img/icons/icon-bonduc-32.png",
+    "48": "/img/icons/icon-bonduc-48.png",
+    "60": "/img/icons/icon-bonduc-60.png",
+    "64": "/img/icons/icon-bonduc-64.png",
+    "90": "/img/icons/icon-bonduc-90.png",
+    "120": "/img/icons/icon-bonduc-120.png",
+    "128": "/img/icons/icon-bonduc-128.png",
+    "256": "/img/icons/icon-bonduc-256.png"
+  },
+  "developer": {
+    "name": "Oliver Merkel",
+    "url": "https://github.com/OMerkel/Oware"
+  },
+  "installs_allowed_from": ["*"]
+}
