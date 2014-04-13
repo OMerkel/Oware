@@ -30,7 +30,7 @@ The _containers_ are often being named _fields_,
 _trou_ (in _French_), _pits_, _holes_, _depressions_,
 _houses_ or _bowls_. Some games come with different types
 of such containers. Mostly an additional non standard type
-of container is just for holding tokens representing the
+of container is just used for holding tokens representing the
 current player's score. The score is reflected by the amount
 of tokens contained. These larger size bowls might be named
 _stores_ or simply _Mancalas_. If such stores do not exist
@@ -97,7 +97,7 @@ By mutual agreement players can end the game, too, at any time.
 In that case each player scores the remaining seeds on the own row.
 The player scoring higher wins.
 
-Which means that the game could be a draw.
+Such that the game could end as a draw on equal scores.
 
 ### Typical Oware Game Material
 
