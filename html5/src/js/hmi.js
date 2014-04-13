@@ -164,4 +164,19 @@ function init() {
   $('#new').click( newGame );
 }
 
-$( init );
+function svgWait() {
+  var svgEmbed = document.embeds['board'];
+  if (typeof svgEmbed != 'undefined') {
+    if (typeof svgEmbed.getSVGDocument != 'undefined') {
+      var svgDocument = svgEmbed.getSVGDocument();
+      if (null != svgDocument) {
+        init();
+      }
+      else {
+        setTimeout( svgWait,5 );
+      }
+    }
+  }
+}
+
+$( svgWait );
