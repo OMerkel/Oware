@@ -1,6 +1,12 @@
 Oware
 =====
 
+* _Start an online_ __Oware__ _session on_ http://omerkel.github.io/Oware/html5/src/
+
+__Keywords, Categories__ _Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game_
+
+This is the two player abstract perfect-information strategy board game Oware for HTML5/Javascript/CSS platform.
+
 **Oware** (in _Akan_ language) - a traditional game from Ghana, Africa,
 is a _Mancala (Manquala)_ game.
 
