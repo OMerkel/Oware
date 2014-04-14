@@ -4,8 +4,8 @@ Oware
 **Oware** (in _Akan_ language) - a traditional game from Ghana, Africa,
 is a _Mancala (Manquala)_ game.
 
-There is a wide ranged set of the family called _Mancala (Manquala)_
-games. Often the term _Sowing Games_ is used, too.
+There is a wide ranged class of games called _Mancala (Manquala)_ games.
+Often the term _Sowing Games_ is used, too.
 
 The term _Mancala (also Manqala, Mankala)_ is derived from the Arabic
 term **naqalah** with its meaning **to move** an object. These class of
@@ -16,8 +16,8 @@ eventually the same game plus rules set could be found under a
 different name, too. Still the origin seem to be quite clear for
 specific types at least.
 
-The basic ruleset on each player's turn is quite equal as a common
-aspect of these _Mancala_ games. A turn usually is performed by
+As a common aspect of these _Mancala_ games the basic rules set
+on each player's turn is quite equal. A turn usually is performed by
 picking up the whole amount of _tokens_ available on a chosen
 _container_ on board first. Then this picked up set of mostly
 one single sort of game _tokens_ is _distributed_ following a
