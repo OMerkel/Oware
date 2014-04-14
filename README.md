@@ -61,7 +61,7 @@ each bowl holds 4 Bonduc seeds.
 
 Players' turn alternates between the two players. The player
 starts own sowing turns from a non empty bowl of his choice
-in the row next to his own side. Still he will sow seeds on
+in the row next to his own side. Still he will sow on
 the other player's row, too. Sowing is performed with exactly one
 seed per bowl following the consecutive bowls in counter clockwise
 direction. In case the sowing will reach the starting bowl of
