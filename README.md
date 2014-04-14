@@ -91,7 +91,8 @@ In such a case then a player is not allowed to end his turn without a
 remaining seed for the opponent's turn if avoidable. Such that the
 player is forced to prefer any move that gives at least one seed
 being sown in an opponent's bowl then. In case this is not possible
-the game ends and the player with the higher score wins.
+the game ends, the remaining seeds on board will not be scored and
+the player with the higher score wins.
 
 By mutual agreement players can end the game, too, at any time.
 In that case each player scores the remaining seeds on the own row.
