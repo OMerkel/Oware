@@ -19,6 +19,14 @@ figure.diagram img {
   margin: 0px;
 }
 
+figure.diagram embed {
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 4px;
+  border-radius: 7px 7px 0 0;
+  margin: 0px;
+}
+
 figure.diagram figcaption {
   background-color: #666; color: #fff;
   font-style: italic;
