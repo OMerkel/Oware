@@ -65,12 +65,18 @@ This Oware implementation uses a game board with 12 bowls in
 total - consisting of 2 rows having 6 bowls each. Initially
 each bowl holds 4 Bonduc seeds.
 
+| <img height="370" ondragstart="return false;" alt="Initial board position in Oware, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_initial.jpg" /> |
+| --- |
+| <i>Initial board position in Oware, 12 bowls containing 4 Caesalpinia Bonduc seeds each, one player starts turns in lower row ranged from bowl 1 to bowl 6, other player starts turns in upper row ranged from bowl 7 to 12.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
 Players' turn alternates between the two players. The player
-starts own sowing turns from a non empty bowl of his choice
+starts own sowing turns from any non empty bowl of his choice
 in the row next to his own side. Still he will sow on
 the other player's row, too. Sowing is performed with exactly one
 seed per bowl following the consecutive bowls in counter clockwise
-direction. In case the sowing will reach the starting bowl of
+direction (in a circular sowing path if reaching bowl 12
+then continue on bowl 1 if necessary).
+In case the sowing will reach the chosen starting bowl of
 the turn again then this bowl is skipped each time. Such that
 this bowl will remain empty in the end of this player's turn.
 
@@ -81,8 +87,8 @@ out of game play and scoring these. In case of previous direct
 adjacent bowls (in clockwise direction) being opponent's bowls, too,
 holding 2 or 3 seeds, these are taken away being scored as well.
 Reaching any other bowl without any seed, just one seed or four
-or more seeds will end the scoring even if there are following
-opponent's bowls left containing 2 or 3 seeds not being
+or more seeds will end the scoring even if any further
+opponent's bowls are containing 2 or 3 seeds not being
 directly adjacent.
 
 Taking and scoring all remaining seeds of the opponent's row
