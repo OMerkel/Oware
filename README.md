@@ -121,10 +121,10 @@ clay alike precious look and can be found as a medical ingredient as well.
 Such that there is a good chance of getting a spare set of Bonduc seeds
 if for some reason yours get incomplete.
 
-The more puristic travel edition could be to simply form some pits on a
-sandy beach and use any type of tokens you prefer of course. This solution
+The more puristic travel edition could simply be formed by some pits on a
+sandy beach using any type of tokens you prefer of course. This solution
 is quite traditional, too.
 
-Surely some priceless unique or antique Oware sets up to the size of a
-whole table can be found. Watch out and find some of these gems using
+Surely some priceless unique or antique Oware sets can be found up to the
+size of a whole table. Watch out and find some of these gems using
 your preferred web search engine.
