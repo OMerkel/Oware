@@ -145,7 +145,8 @@ If not otherwise stated all game graphics (indepedend of its format) are license
          Nigeria, C&ocirc;te d'Ivoire, Cabo Verde, plus other regions).</p>
     </div><!-- collapsible -->
     <div data-role="collapsible">
-      <h4>Oware Rules</h4>
+      <h3>Oware Rules</h3>
+      <h4>Game Components</h4>
       <p>This Oware implementation uses a game board with 12 bowls in
         total - consisting of 2 rows having 6 bowls each. Initially
         each bowl holds 4 Bonduc seeds.</p>
@@ -156,16 +157,36 @@ If not otherwise stated all game graphics (indepedend of its format) are license
           while one player starts own turns with any chosen bowl 1 to 6,
           the other player starts own turns with a bowl 7 to 12.</figcaption>
       </figure>
-      <p>Players' turn alternates between the two players. The player
-        starts own sowing turns from any non empty bowl of his choice
-        in the row next to his own side. Still he will sow on
-        the other player's row, too. Sowing is performed with exactly one
-        seed per bowl following the consecutive bowls in counter clockwise
-        direction (in a circular sowing path if reaching bowl 12
-        then continue on bowl 1 if necessary).
+      <h4>Objective</h4>
+      <p>Objective of the game is to get a higher score than the opponent.
+        This is done by harvesting more seeds than the opponent.
+        The harvested seeds represent the score.</p>
+      <h4>Turn Sequence</h4>
+      <p>Players' turn alternates between the two players. A player's turn
+        consists of the following phases</p>
+      <ol>
+        <li>Pick Up Seeds, then</li>
+        <li>Sowing, followed by</li>
+        <li>Harvesting.</li>
+      </ol>
+      <h4>Pick Up Seeds</h4>
+      <p>The player starts own sowing turns from any non empty bowl of
+        his choice in the row next to his own side. The whole content
+        of the bowl is picked up leaving the bowl empty.</p>
+      <h4>Sowing</h4>
+      <p>Direction of game play is counter clockwise here in a circular
+        sowing path. If reaching bowl 12 then continue on bowl 1 if
+        necessary. The sowing starts adjacent towards the selected bowl
+        in counter clockwise direction now. Although the seeds were
+        picked up from an own bowl sowing is performed on all bowls.
+        Such that the other player's row is included, too, interacting
+        with the opponent's side of the board.</p>
+      <p>Sowing is performed with exactly one seed per bowl following
+        the consecutive bowls in counter clockwise direction.
         In case the sowing will reach the chosen starting bowl of
         the turn again then this bowl is skipped each time. Such that
         this bowl will remain empty in the end of this player's turn.</p>
+      <h4>Harvesting</h4>
       <p>A player will score (also called <em>harvesting</em>) on sowing the last
         seed of his turn into an opponent's bowl holding 2 or 3 seeds
         including the last one sown. This is done by taking these seeds
