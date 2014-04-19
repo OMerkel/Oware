@@ -2,6 +2,7 @@ Oware
 =====
 
 * _Start an online_ __Oware__ _session on_ http://omerkel.github.io/Oware/html5/src/
+    * runs in various browsers on Desktop systems like BSDs, Linux, Win, MacOS and mobile platforms like Android, FirefoxOS, iOS.
 
 __Keywords, Categories__ _Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game_
 
@@ -9,6 +10,10 @@ This is the two player abstract perfect-information strategy board game Oware fo
 
 **Oware** (in _Akan_ language) - a traditional game from Ghana, Africa,
 is a _Mancala (Manquala)_ game.
+
+| <img height="370" ondragstart="return false;" alt="Playing Oware on Android tablet, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_tablet.jpg" /> |
+| --- |
+| <i>Playing Oware on Android tablet<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 There is a wide ranged class of games called _Mancala (Manquala)_ games.
 Often the term _Sowing Games_ is used, too.
