@@ -2,7 +2,9 @@ Oware
 =====
 
 * _Start an online_ __Oware__ _session on_ http://omerkel.github.io/Oware/html5/src/
-    * runs in various browsers on Desktop systems like BSDs, Linux, Win, MacOS and mobile platforms like Android, FirefoxOS, iOS.
+* runs in various browsers on 
+    * Desktop systems like BSDs, Linux, Win, MacOS and
+    * mobile platforms like Android, FirefoxOS, iOS.
 
 __Keywords, Categories__ _Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game_
 
