@@ -1,9 +1,6 @@
 CACHE MANIFEST
 # v0.1
 css/index.css
-img/board01.png
-img/board_initial.svg
-img/bonduc01-256.png
 img/icons/cc_by_nc_sa.png
 img/icons/favicon.ico
 img/icons/trou-bonduc04-16.png
@@ -16,6 +13,10 @@ img/icons/trou-bonduc04-120.png
 img/icons/trou-bonduc04-128.png
 img/icons/trou-bonduc04-256.png
 img/icons/trou-bonduc04-512.png
+img/board01.png
+img/board_initial.svg
+img/bonduc01-256.png
+img/folded_oware_set.jpg
 img/oliver_lion.jpg
 img/oware-game.svg
 img/trou-bonduc00.png
@@ -38,13 +39,13 @@ js/board.js
 js/common.js
 js/engine.js
 js/hmi.js
-thirdparty/jquery-1.11.0.js
-thirdparty/jquery-favicon.ico
 thirdparty/jquery.mobile-1.4.2/demos/favicon.ico
 thirdparty/jquery.mobile-1.4.2/images/ajax-loader.gif
 thirdparty/jquery.mobile-1.4.2/jquery.mobile-1.4.2.css
 thirdparty/jquery.mobile-1.4.2/jquery.mobile-1.4.2.js
 thirdparty/jquery.mobile-1.4.2/MIT-LICENSE.txt
+thirdparty/jquery-1.11.0.js
+thirdparty/jquery-favicon.ico
 thirdparty/MIT-LICENSE.txt
 AUTHORS
 index.html
