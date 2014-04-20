@@ -159,7 +159,7 @@ that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
 patterns or motifs.
 
-| <img width="800" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
+| <img width="640" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
 | --- |
 | <i>Folded Oware set with traditional ancient African pattern<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
