@@ -68,6 +68,8 @@ rules will be described inside the Oware application as well.
 
 ### Oware Rules
 
+#### Game Components
+
 This Oware implementation uses a game board with 12 bowls in
 total - consisting of 2 rows having 6 bowls each. Initially
 each bowl holds 4 Bonduc seeds.
@@ -76,16 +78,44 @@ each bowl holds 4 Bonduc seeds.
 | --- |
 | <i>Initial board position in Oware, 12 bowls containing 4 Caesalpinia Bonduc seeds each, one player starts turns in lower row ranged from bowl 1 to bowl 6, other player starts turns in upper row ranged from bowl 7 to 12.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-Players' turn alternates between the two players. The player
-starts own sowing turns from any non empty bowl of his choice
-in the row next to his own side. Still he will sow on
-the other player's row, too. Sowing is performed with exactly one
-seed per bowl following the consecutive bowls in counter clockwise
-direction (in a circular sowing path if reaching bowl 12
-then continue on bowl 1 if necessary).
+#### Objective
+
+Objective of the game is to get a higher score than the opponent.
+This is done by harvesting more seeds than the opponent.
+The harvested seeds represent the score.
+
+#### Turn Sequence
+
+Players' turn alternates between the two players. A player's turn
+consists of the following phases
+
+1. Pick Up Seeds, then
+2. Sowing, followed by
+3. Harvesting.
+
+#### Pick Up Seeds
+
+The player starts own sowing turns from any non empty bowl of
+his choice in the row next to his own side. The whole content
+of the bowl is picked up leaving the bowl empty.
+
+#### Sowing
+
+Direction of game play is counter clockwise here in a circular
+sowing path. If reaching bowl 12 then continue on bowl 1 if
+necessary. The sowing starts adjacent towards the selected bowl
+in counter clockwise direction now. Although the seeds were
+picked up from an own bowl sowing is performed on all bowls.
+Such that the other player's row is included, too, interacting
+with the opponent's side of the board.
+
+Sowing is performed with exactly one seed per bowl following
+the consecutive bowls in counter clockwise direction.
 In case the sowing will reach the chosen starting bowl of
 the turn again then this bowl is skipped each time. Such that
 this bowl will remain empty in the end of this player's turn.
+
+#### Harvesting
 
 A player will score (also called _harvesting_) on sowing the last
 seed of his turn into an opponent's bowl holding 2 or 3 seeds
@@ -127,7 +157,13 @@ then the chance is quite high that the board shall be made of
 are available in simple travel editions made of two similar half boards
 that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
-patterns or motifs. Typical tokens could be _nickernuts_. These are tropical
+patterns or motifs.
+
+| <img width="800" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
+| --- |
+| <i>Folded Oware set with traditional ancient African pattern<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
+Typical tokens could be _nickernuts_. These are tropical
 seeds of a shrub called **Bonduc** (Latin, botanical: _Caesalpinia bonduc_).
 Bonduc seeds are widely used for traditional African jewellery due to it's
 clay alike precious look and can be found as a medical ingredient as well.
