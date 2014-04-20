@@ -89,11 +89,11 @@ The harvested seeds represent the score.
 Players' turn alternates between the two players. A player's turn
 consists of the following phases
 
-1. Pick Up Seeds, then
+1. Picking Up Seeds, then
 2. Sowing, followed by
 3. Harvesting.
 
-#### Pick Up Seeds
+#### Picking Up Seeds
 
 The player starts own sowing turns from any non empty bowl of
 his choice in the row next to his own side. The whole content
