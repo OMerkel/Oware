@@ -62,9 +62,9 @@ any non empty bowl being controlled by himself.
 
 The rules currently realized in this software project are commonly
 known as Oware, Awari, Wari, Awélé, Awalé, Aualé, Ayò depending
-on the geographic origin and language spoken (Ghana, Yoruba,
-Nigeria, Côte d'Ivoire, Cabo Verde, plus other regions). These
-rules will be described inside the Oware application as well.
+on the geographic origin, culture and language spoken (Ghana and
+Côte d'Ivoire (Akan / Yoruba), Nigeria, Cabo Verde, plus other regions).
+These rules will be described inside the Oware application as well.
 
 ### Oware Rules
 
@@ -157,7 +157,9 @@ then the chance is quite high that the board shall be made of
 are available in simple travel editions made of two similar half boards
 that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
-patterns or motifs.
+patterns or Akan cultural motifs. These could typically include Adinkra
+symbols like the popular Gye Nyame or Nyame Ye Ohene with religious
+character, too.
 
 | <img width="640" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
 | --- |
@@ -177,3 +179,14 @@ is quite traditional, too.
 Surely some priceless unique or antique Oware sets can be found up to the
 size of a whole table. Watch out and find some of these gems using
 your preferred web search engine.
+
+### Oware and its Origin
+
+Today's name of the game as presented here with given rules is <i>Oware</i>.
+Oware is an <i>Akan</i> culture term. Commonly reported Oware is
+related to <i>Opoku Ware I.</i> (* 1700; &dagger; 1750), a former monarch
+of the <i>Ashanti</i>(<i>Asantehene</i>).
+
+In <i>Akan</i> language <i>ware</i> means <i>to be married</i>. Various
+sources exist telling legends about couples playing the game Oware
+endlessly - finally marrying to continue playing.
