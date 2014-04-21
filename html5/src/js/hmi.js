@@ -57,7 +57,7 @@ function processEngineRequest( eventReceived ) {
 function myChoice( e ) {
   if (typeof e.currentTarget == 'object') {
     var idBowl = e.currentTarget.id;
-    var idBonduc = e.explicitOriginalTarget.id;
+    var idBonduc = e.target.id;
     // ECMA-262
     // Desktop Browsers might follow ECMA-262
     // still some Mobile Browsers or Mobile OSes do not implement ECMA-262
