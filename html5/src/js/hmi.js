@@ -150,7 +150,9 @@ function newGame() {
 }
 
 function init() {
-  window.screen.mozLockOrientation("landscape-primary");
+  if (typeof window.screen.mozLockOrientation != 'undefined') {
+    window.screen.mozLockOrientation("landscape-primary");
+  }
   hmi = new Hmi();
   hmi.init();
   var $window = $(window);
