@@ -10,18 +10,18 @@ __Keywords, Categories__ _Board Games, Games/Entertainment, Mobile, Abstract Gam
 
 This is the two player abstract perfect-information strategy board game Oware for HTML5/Javascript/CSS platform.
 
-**Oware** (in _Akan_ language) - a traditional game from Ghana, Africa,
-is a _Mancala (Manquala)_ game.
+<b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
+is a <em>Mancala (Manquala)</em> game.
 
 | <img width="100%" ondragstart="return false;" alt="Playing Oware on Android tablet, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_tablet.jpg" /> | <img width="100%" ondragstart="return false;" alt="Screenshot of Oware session on Android mobile phone, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_acer_cm_s500_140421.jpg" /> |
 | --- | --- |
 | <i>Playing Oware on Android tablet<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> | <i>Screenshot of Oware session on Android mobile phone<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-There is a wide ranged class of games called _Mancala (Manquala)_ games.
-Often the term _Sowing Games_ is used, too.
+There is a wide ranged class of games called <em>Mancala (Manquala)</em> games.
+Often the term <em>Sowing Games</em> is used, too.
 
-The term _Mancala (also Manqala, Mankala)_ is derived from the Arabic
-term **naqalah** with its meaning **to move** an object. These class of
+The term <em>Mancala (also Manqala, Mankala)</em> is derived from the Arabic
+term <b>naqalah</b> with its meaning <b>to move</b> an object. These class of
 games are well known worldwide. Nonetheless rules, structure of fields
 on board and even number of players strongly varies from game to game
 depending on geographic location, language and culture. Such that
@@ -29,41 +29,41 @@ eventually the same game plus rules set could be found under a
 different name, too. Still the origin seem to be quite clear for
 specific types at least.
 
-As a common aspect of these _Mancala_ games the basic rules set
+As a common aspect of these <em>Mancala</em> games the basic rules set
 on each player's turn is quite equal. A turn usually is performed by
-picking up the whole amount of _tokens_ available on a chosen
-_container_ on board first. Then this picked up set of mostly
-one single sort of game _tokens_ is _distributed_ following a
-_path_ on board formed by such _containers_ holding the _tokens_.
+picking up the whole amount of <em>tokens</em> available on a chosen
+<em>container</em> on board first. Then this picked up set of mostly
+one single sort of game <em>tokens</em> is <em>distributed</em> following a
+<em>path</em> on board formed by such <em>containers</em> holding the <em>tokens</em>.
 
-_Distribution_ on a player's turn is called _sowing_. Thus
-these corresponding games are known as _Sowing Games_, too.
+<em>Distribution</em> on a player's turn is called <em>sowing</em>. Thus
+these corresponding games are known as <em>Sowing Games</em>, too.
 
-The _containers_ are often being named _fields_,
-_trou_ (in _French_), _pits_, _holes_, _depressions_,
-_houses_ or _bowls_. Some games come with different types
+The <em>containers</em> are often being named <em>fields</em>,
+<em>trou</em> (in <em>French</em>), <em>pits</em>, <em>holes</em>, <em>depressions</em>,
+<em>houses</em> or <em>bowls</em>. Some games come with different types
 of such containers. Mostly an additional non standard type
 of container is just used for holding tokens representing the
 current player's score. The score is reflected by the amount
 of tokens contained. These larger size bowls might be named
-_stores_ or simply _Mancalas_. If such stores do not exist
+<em>stores</em> or simply <em>Mancalas</em>. If such stores do not exist
 then tokens might simply be scored by removal from game play
 staying offboard for the rest of the game.
 
-Typically the _tokens_ are represented by some game _pieces_
-like _seeds_, _beads_, _beans_, _nuts_, _stones_, _cowry shells_, or
-any sort of _counters_. Most Mancala games use undifferentiated _tokens_.
+Typically the <em>tokens</em> are represented by some game <em>pieces</em>
+like <em>seeds</em>, <em>beads</em>, <em>beans</em>, <em>nuts</em>, <em>stones</em>, <em>cowry shells</em>, or
+any sort of <em>counters</em>. Most Mancala games use undifferentiated <em>tokens</em>.
 
-In case of a _fixed sowing path_ the bowls can be indentified or
-ordered by a simple _index numbering_. You might find terminology like
-a player's _side_ or _ranks_ or _rows_ belonging to a player. In that case
-the player is allowed to start his turns by picking up all _tokens_ from
+In case of a <em>fixed sowing path</em> the bowls can be indentified or
+ordered by a simple <em>index numbering</em>. You might find terminology like
+a player's <em>side</em> or <em>ranks</em> or <em>rows</em> belonging to a player. In that case
+the player is allowed to start his turns by picking up all <em>tokens</em> from
 any non empty bowl being controlled by himself.
 
 The rules currently realized in this software project are commonly
-known as Oware, Awari, Wari, Awélé, Awalé, Aualé, Ayò depending
+known as Oware, Awari, Wari, Aw&eacute;l&eacute;, Awal&eacute;, Aual&eacute;, Ay&ograve; depending
 on the geographic origin, culture and language spoken (Ghana and
-Côte d'Ivoire (Akan / Yoruba), Nigeria, Cabo Verde, plus other regions).
+C&ocirc;te d'Ivoire (Akan / Yoruba), Nigeria, Cabo Verde, plus other regions).
 These rules will be described inside the Oware application as well.
 
 ### Oware Rules
@@ -117,7 +117,7 @@ this bowl will remain empty in the end of this player's turn.
 
 #### Harvesting
 
-A player will score (also called _harvesting_) on sowing the last
+A player will score (also called <em>harvesting</em>) on sowing the last
 seed of his turn into an opponent's bowl holding 2 or 3 seeds
 including the last one sown. This is done by taking these seeds
 out of game play and scoring these. In case of previous direct
@@ -151,9 +151,9 @@ Such that the game could end as a draw on equal scores.
 
 ### Typical Oware Game Material
 
-If you are looking forward to getting a typical **Oware game** (_Ghana_)
+If you are looking forward to getting a typical <b>Oware game</b> (<em>Ghana</em>)
 then the chance is quite high that the board shall be made of
-**Sese (Esese, Osese) wood** carved manually. Such handcrafted Oware sets
+<b>Sese (Esese, Osese) wood</b> carved manually. Such handcrafted Oware sets
 are available in simple travel editions made of two similar half boards
 that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
@@ -165,8 +165,8 @@ character, too.
 | --- |
 | <i>Folded Oware set with traditional ancient African pattern<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-Typical tokens could be _nickernuts_. These are tropical
-seeds of a shrub called **Bonduc** (Latin, botanical: _Caesalpinia bonduc_).
+Typical tokens could be <em>nickernuts</em>. These are tropical
+seeds of a shrub called <b>Bonduc</b> (Latin, botanical: <em>Caesalpinia bonduc</em>).
 Bonduc seeds are widely used for traditional African jewellery due to it's
 clay alike precious look and can be found as a medical ingredient as well.
 Such that there is a good chance of getting a spare set of Bonduc seeds
@@ -182,11 +182,11 @@ your preferred web search engine.
 
 ### Oware and its Origin
 
-Today's name of the game as presented here with given rules is <i>Oware</i>.
-Oware is an <i>Akan</i> culture term. Commonly reported Oware is
-related to <i>Opoku Ware I.</i> (* 1700; &dagger; 1750), a former monarch
-of the <i>Ashanti</i>(<i>Asantehene</i>).
+Today's name of the game as presented here with given rules is <em>Oware</em>.
+Oware is an <em>Akan</em> culture term. Commonly reported Oware is
+related to <em>Opoku Ware I.</em> (* 1700; &dagger; 1750), a former monarch
+of the <em>Ashanti</em>(<em>Asantehene</em>).
 
-In <i>Akan</i> language <i>ware</i> means <i>to be married</i>. Various
+In <em>Akan</em> language <em>ware</em> means <em>to be married</em>. Various
 sources exist telling legends about couples playing the game Oware
 endlessly - finally marrying to continue playing.
