@@ -1,12 +1,12 @@
 Oware
 =====
 
-* _Start an online_ __Oware__ _session on_ http://omerkel.github.io/Oware/html5/src/
-* _runs in various browsers on_
-    * _desktop systems like BSDs, Linux, Win, MacOS and_
-    * _mobile platforms like Android, FirefoxOS, iOS._
+* <em>Start an online</em> <b>Oware</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src/
+* <em>runs in various browsers on</em>
+    * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
+    * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
 
-__Keywords, Categories__ _Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game_
+<b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game</em>
 
 This is the two player abstract perfect-information strategy board game Oware for HTML5/Javascript/CSS platform.
 
