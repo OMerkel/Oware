@@ -69,16 +69,14 @@ Session.prototype.draw = function () {
 };
 
 Session.prototype.move = function ( bowl ) {
-  var endOfGame = this.board.move(bowl);
-  self.postMessage({ 'eventClass': 'response',
-    'state': 'ack_move', 'bowl': bowl });
-  if(endOfGame) {
-    self.postMessage({ eventClass: 'request',
-      request: 'end_of_game',
-      winner: this.board.getWinner() });
+  this.board.pickUp(bowl);
+  while(this.board.hasPickedUp()) {
+    this.board.sow();
   }
+  this.board.renderScore(this.board.latestSown);
+  this.board.nextPlayer();
 };
 
 Session.prototype.setup = function () {
   this.board.copy( Board.INITIALSETUP );
-}
+};

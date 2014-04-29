@@ -19,6 +19,10 @@ Board.INITIALSETUP[Common.BOWLS] = [
     Common.BONDUCPERBOWL, Common.BONDUCPERBOWL,
     Common.BONDUCPERBOWL, Common.BONDUCPERBOWL
   ];
+Board.INITIALSETUP[Common.PICKEDUP] = 0;
+Board.INITIALSETUP[Common.INITIALBOWL] = Common.NOBOWL;
+Board.INITIALSETUP[Common.LATESTSOWN] = Common.NOBOWL;
+Board.INITIALSETUP[Common.NEXTSOWING] = Common.NOBOWL;
 Board.INITIALSETUP[Common.SCORE] = {};
 Board.INITIALSETUP[Common.SCORE][Common.PLAYERSOUTH] = 0;
 Board.INITIALSETUP[Common.SCORE][Common.PLAYERNORTH] = 0;
@@ -29,6 +33,10 @@ Board.prototype.copy = function ( setup ) {
   for(var n=0; n<Common.BOWLSTOTAL; ++n) {
     this.bowls[n] = setup[Common.BOWLS][n];
   }
+  this.pickedUp = setup[Common.PICKEDUP];
+  this.initialBowl = setup[Common.INITIALBOWL];
+  this.latestSown = setup[Common.LATESTSOWN];
+  this.nextSowing = setup[Common.NEXTSOWING];
   this.score = {};
   this.score[Common.PLAYERSOUTH] = setup[Common.SCORE][Common.PLAYERSOUTH];
   this.score[Common.PLAYERNORTH] = setup[Common.SCORE][Common.PLAYERNORTH];
@@ -38,6 +46,10 @@ Board.prototype.getState = function () {
   var result = {};
   result[Common.ACTIVE] = this.activePlayer;
   result[Common.BOWLS] = this.bowls;
+  result[Common.PICKEDUP] = this.pickedUp;
+  result[Common.INITIALBOWL] = this.initialBowl;
+  result[Common.LATESTSOWN] = this.latestSown;
+  result[Common.NEXTSOWING] = this.nextSowing;
   result[Common.SCORE] = {};
   result[Common.SCORE][Common.PLAYERSOUTH] = this.score[Common.PLAYERSOUTH];
   result[Common.SCORE][Common.PLAYERNORTH] = this.score[Common.PLAYERNORTH];
@@ -49,19 +61,32 @@ Board.prototype.nextPlayer = function() {
     Common.PLAYERNORTH : Common.PLAYERSOUTH;
 };
 
-Board.prototype.distribute = function ( move ) {
-  var pickedUp = this.bowls[move];
-  this.bowls[move] = 0;
-  var bowlIndex = move;
-  while(pickedUp > 0) {
+Board.prototype.nextBowl = function ( bowl ) {
+  var bowlIndex = (++bowl) % Common.BOWLSTOTAL;
+  if(bowlIndex == this.initialBowl) {
     bowlIndex = (++bowlIndex) % Common.BOWLSTOTAL;
-    if(bowlIndex == move) {
-      bowlIndex = (++bowlIndex) % Common.BOWLSTOTAL;
-    }
-    --pickedUp;
-    ++this.bowls[bowlIndex];
   }
   return bowlIndex;
+};
+
+Board.prototype.pickUp = function ( bowl ) {
+  this.pickedUp = this.bowls[bowl];
+  this.bowls[bowl] = 0;
+  this.initialBowl = bowl;
+  this.latestSown = Common.NOBOWL;
+  this.nextSowing = this.nextBowl(bowl);
+};
+
+Board.prototype.hasPickedUp = function () {
+  return this.pickedUp > 0;
+};
+
+Board.prototype.sow = function () {
+  var bowlIndex = this.nextSowing;
+  --this.pickedUp;
+  ++this.bowls[bowlIndex];
+  this.latestSown = bowlIndex;
+  this.nextSowing = this.nextBowl(bowlIndex);
 };
 
 Board.prototype.renderScore = function ( lastBowl ) {
@@ -79,13 +104,6 @@ Board.prototype.renderScore = function ( lastBowl ) {
       --bowlIndex;
     }
   }
-};
-
-Board.prototype.move = function ( move ) {
-  var lastBowl = this.distribute(move);
-  this.renderScore(lastBowl);
-  this.nextPlayer();
-  return false;
 };
 
 Board.prototype.getWinner = function () {
