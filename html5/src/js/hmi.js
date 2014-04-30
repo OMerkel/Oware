@@ -44,6 +44,11 @@ function processEngineRequest( eventReceived ) {
     case 'redraw':
       console.log('Engine request: ' + data.request);
       hmi.redraw(data.board);
+      hmi.setupBowlSelection(data.board);
+      break;
+    case 'redraw_sowing':
+      console.log('Engine request: ' + data.request);
+      hmi.redraw(data.board);
       break;
     case 'oware':
       console.log('Game won by player ' + data.winner);
@@ -51,24 +56,6 @@ function processEngineRequest( eventReceived ) {
       break;
     default:
       console.log('Engine used unknown request');
-  }
-}
-
-function myChoice( e ) {
-  if (typeof e.currentTarget == 'object') {
-    var idBowl = e.currentTarget.id;
-    var idBonduc = e.target.id;
-    // ECMA-262
-    // Desktop Browsers might follow ECMA-262
-    // still some Mobile Browsers or Mobile OSes do not implement ECMA-262
-    // Mind that depending on ECMA-262: parseInt('08') == 0 might be true
-    var bonducInSelectedBowl = Number(idBonduc.slice(-2));
-    if(bonducInSelectedBowl>0) {
-      var selectedBowl = Number(idBowl.slice(-2));
-      console.log('Selected bowl: ' + selectedBowl);
-      engine.postMessage({ class: 'request',
-        request: 'move', bowl: selectedBowl });
-    }
   }
 }
 
@@ -105,13 +92,15 @@ Hmi.prototype.update = function() {
 };
 
 Hmi.prototype.redraw = function(board) {
-  console.log('Active player: ' + board[Common.ACTIVE]);
-  var tmp=':';
-  for(var n=11; n>5; --n) tmp += board[Common.BOWLS][n] + ':';
-  console.log('Bowls north: ' + tmp);
-  tmp=':';
-  for(var n=0; n<6; ++n) tmp += board[Common.BOWLS][n] + ':';
-  console.log('Bowls south: ' + tmp);
+  if (0 == board[Common.PICKEDUP]) {
+    console.log('Active player: ' + board[Common.ACTIVE]);
+    var tmp=':';
+    for(var n=11; n>5; --n) tmp += board[Common.BOWLS][n] + ':';
+    console.log('Bowls north: ' + tmp);
+    tmp=':';
+    for(var n=0; n<6; ++n) tmp += board[Common.BOWLS][n] + ':';
+    console.log('Bowls south: ' + tmp);
+  }
 
   tmp=board[Common.SCORE][Common.PLAYERSOUTH];
   this.score[Common.PLAYERSOUTH].textContent = '' + tmp +
@@ -131,14 +120,45 @@ Hmi.prototype.redraw = function(board) {
     var text = bonduc >= Common.BOWLSTOTAL ? '' + bonduc : '';
     this.bowl[n].text[0].textContent = text;
     this.bowl[n].text[1].textContent = text;
+  }
+};
 
+Hmi.prototype.setupBowlSelection = function(board) {
+  for(var n=0; n<Common.BOWLSTOTAL; ++n) {
+    var bowl = this.bowl[n];
     bowl.element.onclick = (n < (Common.BOWLSTOTAL>>1) &&
       board[Common.ACTIVE] == Common.PLAYERSOUTH) ||
       (n >= (Common.BOWLSTOTAL>>1) &&
       board[Common.ACTIVE] == Common.PLAYERNORTH) ?
-      myChoice : null;
+      this.myChoice.bind(this) : null;
   }
+};
 
+Hmi.prototype.disableBowlSelection = function() {
+  for(var n=0; n<Common.BOWLSTOTAL; ++n) {
+    this.bowl[n].element.onclick = null;
+  }
+};
+
+Hmi.prototype.myChoice = function( e ) {
+  if (typeof e.currentTarget == 'object') {
+    this.disableBowlSelection();
+    var idBowl = e.currentTarget.id;
+    var idBonduc = e.target.id;
+    // ECMA-262
+    // Desktop Browsers might follow ECMA-262
+    // still some Mobile Browsers or Mobile OSes do not implement ECMA-262
+    // Mind that depending on ECMA-262: parseInt('08') == 0 might be true
+    var bonducInSelectedBowl = Number(idBonduc.slice(-2));
+    if(bonducInSelectedBowl>0) {
+      var selectedBowl = Number(idBowl.slice(-2));
+      console.log('Selected bowl: ' + selectedBowl);
+      var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
+      engine.postMessage({ class: 'request',
+        request: 'move', bowl: selectedBowl,
+        sowingspeed: speed });
+    }
+  }
 };
 
 Hmi.prototype.restart = function() {

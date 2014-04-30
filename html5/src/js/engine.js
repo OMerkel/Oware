@@ -41,16 +41,16 @@ function processHmiRequest( eventReceived ) {
   var data = eventReceived.data;
   switch (data.request) {
     case 'move':
-      session.move(data.bowl);
+      session.move(data);
       break;
     case 'start':
     case 'restart':
       session.setup();
+      session.draw();
       break;
     default:
       console.log('Hmi used unknown request');
   }
-  session.draw();
 }
 
 self.addEventListener('message', function( ev ) {
@@ -68,13 +68,34 @@ Session.prototype.draw = function () {
   });
 };
 
-Session.prototype.move = function ( bowl ) {
-  this.board.pickUp(bowl);
-  while(this.board.hasPickedUp()) {
-    this.board.sow();
-  }
+Session.prototype.drawSowing = function () {
+  self.postMessage({ eventClass: 'request',
+    request: 'redraw_sowing',
+    board: this.board.getState(),
+  });
+};
+
+Session.prototype.examineResult = function () {
   this.board.renderScore(this.board.latestSown);
   this.board.nextPlayer();
+  this.draw();
+};
+
+Session.prototype.distribute = function () {
+  if(this.board.hasPickedUp()) {
+    this.drawSowing();
+    this.board.sow();
+    setTimeout( this.distribute.bind(this), this.sowingSpeed );
+  }
+  else {
+    this.examineResult();
+  }
+};
+
+Session.prototype.move = function ( data ) {
+  this.board.pickUp(data.bowl);
+  this.sowingSpeed = data.sowingspeed;
+  this.distribute();
 };
 
 Session.prototype.setup = function () {

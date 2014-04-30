@@ -83,10 +83,12 @@ If not otherwise stated all game graphics (indepedend of its format) are license
       <li data-icon='back' data-rel='close'><a href='#'>Back</a></li>
       <li data-role='list-divider'>&nbsp;</li>
       <li data-icon='star' ><a id='new' href='#'>New</a></li>
-      <li data-icon='action' ><a href='#rules-page'
-        data-transition='pop'>Rules</a></li>
-      <li data-icon='info' ><a href='#about-page'
-        data-transition='pop'>About</a></li>
+      <li data-icon='action' ><a href='#rules-page' data-rel='page'
+        data-transition='pop'>Rules&#8230;</a></li>
+      <li data-icon='grid'><a href='#options-menu' data-rel='page'
+        data-transition='slideup'>Options&#8230;</a></li>
+      <li data-icon='info' ><a href='#about-page' data-rel='page'
+        data-transition='pop'>About&#8230;</a></li>
     </ul>
   </div><!-- /panel -->
 </div><!-- /page -->
@@ -257,6 +259,29 @@ If not otherwise stated all game graphics (indepedend of its format) are license
       data-rel='back'>Back</a>
   </div><!-- /content -->
 </div><!-- /page -->
+
+<div data-role='page' data-theme='b' id='options-menu'>
+  <div data-role='header'>
+    <h1><small>Options</small></h1>
+    <a href='#' data-rel='back' data-role='button'
+      data-icon='delete' data-iconpos='notext' class='ui-btn-left'>Close</a>
+  </div><!-- /header -->
+  <div data-role='content'>
+    <form>
+      <fieldset data-role='controlgroup'>
+        <legend>Sowing Speed</legend>
+        <input name='checkbox-speed' id='sowingspeed'
+          checked='checked' type='checkbox'>
+        <label for='sowingspeed'>
+          Slow
+        </label>
+      </fieldset>
+    </form>
+    <a href='#' data-role='button' data-icon='check'
+      data-rel='back' data-theme='c'>Ok</a>
+  </div><!-- /content -->
+</div><!-- /page -->
+
 <div data-role='page' data-theme='b' id='about-page'>
   <div data-role='header'>
     <a href='#' data-rel='back'
