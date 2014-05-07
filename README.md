@@ -182,7 +182,7 @@ your preferred web search engine.
 
 ### Oware and its Origin
 
-Today's name of the game as presented here with given rules is <em>Oware</em>.
+With given rules as presented here today's name of the game is <em>Oware</em>.
 Oware is an <em>Akan</em> culture term. Commonly reported Oware is
 related to <em>Opoku Ware I.</em> (* 1700; &dagger; 1750), a former monarch
 of the <em>Ashanti</em>(<em>Asantehene</em>).
