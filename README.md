@@ -190,3 +190,14 @@ of the <em>Ashanti</em>(<em>Asantehene</em>).
 In <em>Akan</em> language <em>ware</em> means <em>to be married</em>. Various
 sources exist telling legends about couples playing the game Oware
 endlessly - finally marrying to continue playing.
+
+### Contributors / Authors
+
+<table>
+  <tr>
+    <td><p>Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This image is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.    
+    </p>
+    </td>
+    <td><img height="265" ondragstart="return false;" alt="Oliver Merkel, Creative Commons License, This image is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License." src="html5/src/img/oliver_lion.jpg" /></td>
+  </tr>
+</table>
