@@ -201,3 +201,5 @@ endlessly - finally marrying to continue playing.
     <td><img height="265" ondragstart="return false;" alt="Oliver Merkel, Creative Commons License, This image is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License." src="html5/src/img/oliver_lion.jpg" /></td>
   </tr>
 </table>
+
+_All logos, brands, and trademarks mentioned belong to their respective owners._
