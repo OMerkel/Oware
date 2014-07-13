@@ -8,7 +8,7 @@ Oware / Ouril
 
 <b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
-This is an implementation of the two player abstract perfect-information strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
+This is an implementation of the two-player abstract perfect-information strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
 
 <b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
 is a <em>Mancala (Manquala)</em> game.
