@@ -170,6 +170,11 @@ function newGame() {
   hmi.restart();
 }
 
+function setHeader() {
+  $('#myheader').html( $('#rulesoware').is(':checked') ?
+    'Oware' : 'Ouril' );
+}
+
 function init() {
   if (typeof window.screen.mozLockOrientation != 'undefined') {
     window.screen.mozLockOrientation("landscape-primary");
@@ -185,6 +190,9 @@ function init() {
   engine.postMessage({ class: 'request', request: 'start' });
   $window.resize();
   $('#new').click( newGame );
+  $('#rulesoware').click( setHeader );
+  $('#rulesouril').click( setHeader );
+  setHeader();
 }
 
 function svgWait() {
