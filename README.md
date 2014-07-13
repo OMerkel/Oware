@@ -1,17 +1,19 @@
-Oware
-=====
+Oware / Ouril
+=============
 
-* <em>Start an online</em> <b>Oware</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src/
+* <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src/
 * <em>runs in various browsers on</em>
     * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
 
-<b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game</em>
+<b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
-This is the two player abstract perfect-information strategy board game Oware for HTML5/Javascript/CSS platform.
+This is an implementation of the two-player abstract perfect-information strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
 
 <b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
 is a <em>Mancala (Manquala)</em> game.
+
+<b>Ouril</b> (aka <em>Uril, Ouri, Oril</em>) as played in the Republic of Cabo Verde has slightly different rules compared towards Oware. Ouril is popular in Portuguese influenced countries, too.
 
 | <img width="100%" ondragstart="return false;" alt="Playing Oware on Android tablet, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_tablet.jpg" /> | <img width="100%" ondragstart="return false;" alt="Screenshot of Oware session on Android mobile phone, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_acer_cm_s500_140421.jpg" /> |
 | --- | --- |
