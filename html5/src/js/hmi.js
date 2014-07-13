@@ -154,9 +154,10 @@ Hmi.prototype.myChoice = function( e ) {
       var selectedBowl = Number(idBowl.slice(-2));
       console.log('Selected bowl: ' + selectedBowl);
       var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
+	  var rules = $('#rulesoware').is(':checked') ? 'Oware' : 'Ouril';
       engine.postMessage({ class: 'request',
         request: 'move', bowl: selectedBowl,
-        sowingspeed: speed });
+        sowingspeed: speed, rules: rules });
     }
   }
 };

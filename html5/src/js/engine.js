@@ -78,7 +78,9 @@ Session.prototype.drawSowing = function () {
 Session.prototype.examineResult = function () {
   this.board.renderScore(this.board.latestSown);
   this.board.nextPlayer();
-  this.draw();
+  if( 'Ouril' == this.rules && 0 == this.getMoves().length ) {
+    this.board.nextPlayer();
+  }
 };
 
 Session.prototype.distribute = function () {
@@ -86,16 +88,47 @@ Session.prototype.distribute = function () {
     this.drawSowing();
     this.board.sow();
     setTimeout( this.distribute.bind(this), this.sowingSpeed );
-  }
-  else {
+  } else {
     this.examineResult();
+    this.draw();
   }
 };
 
+Session.prototype.getMoves = function () {
+  var result = [];
+  var singles = [];
+  var tmp = Common.PLAYERSOUTH == this.board.activePlayer ?
+    [ 0, 1, 2, 3, 4, 5 ] : [ 6, 7, 8, 9, 10, 11 ];
+  if('Oware' == this.rules) {
+    result = tmp;
+  } else {
+    for(var index=0; index<tmp.length; ++index) {
+      if ( 1 < this.board.bowls[tmp[index]] ) {
+        result[result.length] = tmp[index];
+      } else if ( 1 == this.board.bowls[tmp[index]] ) {
+        singles[singles.length] = tmp[index];
+      }
+    }
+    result = 0 == result.length ? singles : result;
+  }
+  return result;
+};
+
 Session.prototype.move = function ( data ) {
-  this.board.pickUp(data.bowl);
   this.sowingSpeed = data.sowingspeed;
-  this.distribute();
+  this.rules = data.rules;
+  var validMove = false;
+  var moves = this.getMoves();
+  for(var index=0; index<moves.length; ++index) {
+    validMove |= data.bowl == moves[index];
+  }
+  if (validMove) {
+    this.board.pickUp(data.bowl);
+    this.distribute();
+  }
+  else {
+    this.draw();
+  }
 };
 
 Session.prototype.setup = function () {
