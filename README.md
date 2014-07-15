@@ -131,10 +131,13 @@ opponent's bowls are containing 2 or 3 seeds not being
 directly adjacent.
 
 Taking and scoring all remaining seeds of the opponent's row
-completely at once is strictly forbidden and the player will
-lose immediately. Even if the player gets the majority of total
-seeds this way the player will lose immediately. Thus after
-scoring at least one seed must be left over on the opponent's row.
+completely at once is called a <em>Grand Slam</em>. Such a
+<em>Grand Slam</em> is strictly forbidden in <em>Oware</em> 
+and the player performing this action will lose immediately
+even if the player gets the majority of total
+seeds this way. Thus after each scoring at least one seed
+must be left over on the opponent's row. Ending a game with
+a <em>Grand Slam</em> is a forbidden move.
 
 Assumed the opponent ends his turn removing the last seed on his row
 by himself: The opponent's move is totally valid and game continues.
