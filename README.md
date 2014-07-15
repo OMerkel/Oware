@@ -8,12 +8,16 @@ Oware / Ouril
 
 <b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
-This is an implementation of the two-player abstract perfect-information strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
+This is an implementation of the two-player abstract perfect-information
+strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
 
 <b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
 is a <em>Mancala (Manquala)</em> game.
 
-<b>Ouril</b> (aka <em>Uril, Ouri, Oril</em>) as played in the Republic of Cabo Verde has slightly different rules compared towards Oware. Ouril is popular in Portuguese influenced countries, too.
+<b>Ouril</b> (aka <em>Uril, Ouri, Oril</em>) as played in the Republic of
+Cabo Verde has slightly different rules compared towards Oware. Ouril is
+popular in Portuguese influenced countries, too, due to former
+Portuguese colonialism adopting parts of African culture.
 
 | <img width="100%" ondragstart="return false;" alt="Playing Oware on Android tablet, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_tablet.jpg" /> | <img width="100%" ondragstart="return false;" alt="Screenshot of Oware session on Android mobile phone, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/oware_android_acer_cm_s500_140421.jpg" /> |
 | --- | --- |
@@ -119,8 +123,8 @@ this bowl will remain empty in the end of this player's turn.
 
 #### Harvesting
 
-A player will score (also called <em>harvesting</em>) on sowing the last
-seed of his turn into an opponent's bowl holding 2 or 3 seeds
+A player will score (also called <em>harvesting</em>) on sowing the
+last seed of his turn into an opponent's bowl holding 2 or 3 seeds
 including the last one sown. This is done by taking these seeds
 out of game play and scoring these. In case of previous direct
 adjacent bowls (in clockwise direction) being opponent's bowls, too,
