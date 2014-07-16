@@ -1,7 +1,7 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "name": "Oware",
-  "description": "Oware",
+  "description": "Oware and Ouril",
   "launch_path": "/Oware/html5/src/index.html",
   "orientation": "landscape-primary",
   "appcache_path": "/Oware/html5/src/offline.appcache",

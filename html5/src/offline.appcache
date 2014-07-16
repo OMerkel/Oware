@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.1
+# v0.2
 css/index.css
 img/icons/cc_by_nc_sa.png
 img/icons/favicon.ico
@@ -39,11 +39,11 @@ js/board.js
 js/common.js
 js/engine.js
 js/hmi.js
-thirdparty/jquery.mobile-1.4.2/demos/favicon.ico
-thirdparty/jquery.mobile-1.4.2/images/ajax-loader.gif
-thirdparty/jquery.mobile-1.4.2/jquery.mobile-1.4.2.css
-thirdparty/jquery.mobile-1.4.2/jquery.mobile-1.4.2.js
-thirdparty/jquery.mobile-1.4.2/MIT-LICENSE.txt
+thirdparty/jquery.mobile-1.4.3/demos/favicon.ico
+thirdparty/jquery.mobile-1.4.3/images/ajax-loader.gif
+thirdparty/jquery.mobile-1.4.3/jquery.mobile-1.4.3.css
+thirdparty/jquery.mobile-1.4.3/jquery.mobile-1.4.3.js
+thirdparty/jquery.mobile-1.4.3/LICENSE.txt
 thirdparty/jquery-1.11.0.js
 thirdparty/jquery-favicon.ico
 thirdparty/MIT-LICENSE.txt

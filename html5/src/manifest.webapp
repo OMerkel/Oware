@@ -1,7 +1,7 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "name": "Oware",
-  "description": "Oware",
+  "description": "Oware and Ouril",
   "launch_path": "/index.html",
   "orientation": "landscape-primary",
   "icons": {
@@ -13,8 +13,7 @@
     "90": "/img/icons/trou-bonduc04-90.png",
     "120": "/img/icons/trou-bonduc04-120.png",
     "128": "/img/icons/trou-bonduc04-128.png",
-    "256": "/img/icons/trou-bonduc04-256.png",
-    "512": "/img/icons/trou-bonduc04-512.png"
+    "256": "/img/icons/trou-bonduc04-256.png"
   },
   "developer": {
     "name": "Oliver Merkel",
