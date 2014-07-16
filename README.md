@@ -45,7 +45,7 @@ one single sort of game <em>tokens</em> is <em>distributed</em> following a
 <em>Distribution</em> on a player's turn is called <em>sowing</em>. Thus
 these corresponding games are known as <em>Sowing Games</em>, too.
 
-The <em>containers</em> are often being named <em>fields</em>,
+These <em>containers</em> are often named <em>fields</em>,
 <em>trou</em> (in <em>French</em>), <em>pits</em>, <em>holes</em>, <em>depressions</em>,
 <em>houses</em> or <em>bowls</em>. Some games come with different types
 of such containers. Mostly an additional non standard type
@@ -67,9 +67,15 @@ the player is allowed to start his turns by picking up all <em>tokens</em> from
 any non empty bowl being controlled by himself.
 
 The rules currently realized in this software project are commonly
-known as Oware, Awari, Wari, Aw&eacute;l&eacute;, Awal&eacute;, Aual&eacute;, Ay&ograve; depending
-on the geographic origin, culture and language spoken (Ghana and
-C&ocirc;te d'Ivoire (Akan / Yoruba), Nigeria, Cabo Verde, plus other regions).
+known as Oware, Awari, Wari, Aw&eacute;l&eacute;, Awal&eacute;,
+Aual&eacute;, Ay&ograve; depending on the geographic origin,
+culture and language spoken (Ghana and C&ocirc;te d'Ivoire
+(Akan / Yoruba), Nigeria, Cabo Verde, plus other regions).
+
+Additionally the options menu allows modification of the
+application behavior so Ouril (also known as <em>Uril, Ouri, Oril</em>)
+can be played.
+
 These rules will be described inside the Oware application as well.
 
 ### Oware Rules
@@ -166,9 +172,18 @@ then the chance is quite high that the board shall be made of
 are available in simple travel editions made of two similar half boards
 that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
-patterns or Akan cultural motifs. These could typically include Adinkra
-symbols like the popular Gye Nyame or Nyame Ye Ohene with religious
-character, too.
+patterns or Akan cultural motifs.
+
+Please be aware and respect that motifs might include <em>Adinkra</em>
+symbols with partly religious meanings or background. Popular is the
+use of <em>Adinkra</em> symbol <em>Gye Nyame</em> that
+could translate to <em>Except God (I fear none)</em> (supremacy of God) or
+<em>Nyame Ye Ohene</em> (meaning <em>God is King</em>),
+<em>Akoben</em> (representing a <em>War horn</em>, symbol of valor),
+<em>Sankofa</em> (meaning that it is <em>acceptable to retry</em> or
+to <em>learn from the past</em> or <em>go back and get anything
+you might have forgotten</em>, this sign of wisdom is often
+misinterpreted as being a heart or love symbol).
 
 | <img width="640" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
 | --- |
@@ -199,6 +214,21 @@ of the <em>Ashanti</em>(<em>Asantehene</em>).
 In <em>Akan</em> language <em>ware</em> means <em>to be married</em>. Various
 sources exist telling legends about couples playing the game Oware
 endlessly - finally marrying to continue playing.
+### Ouril Rules
+<em>Ouril</em> has slightly different rules compared towards Oware.
+
+Picking up <em>single seeds</em> from own bowls is allowed only as long as none other
+own bowl is holding more than single seeds.
+
+A <em>Grand Slam</em> is allowed under certain conditions:
+
+* The player performing a <em>Grand Slam</em> must take another turn skipping the
+  opponent's turn.
+* In this following turn the move must be chosen so that afterwards the opponent's row
+  will hold one seed at least. If this is not possible at all then the players harvest
+  the remaining seeds on their own rows.
+* As an exception a <em>Grand Slam</em> is allowed without additional moves, too,
+  if this way the player gets the majority of total harvested seeds winning the game.
 
 ### Contributors / Authors
 
