@@ -154,7 +154,7 @@ Hmi.prototype.myChoice = function( e ) {
       var selectedBowl = Number(idBowl.slice(-2));
       console.log('Selected bowl: ' + selectedBowl);
       var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
-	  var rules = $('#rulesoware').is(':checked') ? 'Oware' : 'Ouril';
+      var rules = $('#rulesoware').is(':checked') ? 'Oware' : 'Ouril';
       engine.postMessage({ class: 'request',
         request: 'move', bowl: selectedBowl,
         sowingspeed: speed, rules: rules });
@@ -175,6 +175,14 @@ function setHeader() {
     'Oware' : 'Ouril' );
 }
 
+function sync(event, ui) {
+  if( 'game-page' == ui.toPage[0].id ) {
+    hmi.init();
+    engine.postMessage({ class: 'request',
+      request: 'sync' });
+  }
+}
+
 function init() {
   if (typeof window.screen.mozLockOrientation != 'undefined') {
     window.screen.mozLockOrientation("landscape-primary");
@@ -193,6 +201,7 @@ function init() {
   $('#rulesoware').click( setHeader );
   $('#rulesouril').click( setHeader );
   setHeader();
+  $( document ).on( 'pagecontainershow', sync);
 }
 
 function svgWait() {

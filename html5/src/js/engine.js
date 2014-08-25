@@ -48,6 +48,9 @@ function processHmiRequest( eventReceived ) {
       session.setup();
       session.draw();
       break;
+    case 'sync':
+      session.draw();
+      break;
     default:
       console.log('Hmi used unknown request');
   }
