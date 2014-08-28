@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <!--
-Logos and trademarks belong to their respective owners.
+Copyright (c) 2014
+@author Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de.
+All rights reserved.
 
-All source code also including code parts written in HMTL, Javascript, CSS, Python is under MIT License.
-
-  The MIT License (MIT)
-
-  Copyright (c) 2014 Oliver Merkel
-
-  @author Oliver Merkel, &lt;Merkel(dot)Oliver(at)web(dot)de&gt;
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy of
-  this software and associated documentation files (the &quot;Software&quot;), to deal in
-  the Software without restriction, including without limitation the rights to
-  use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-  the Software, and to permit persons to whom the Software is furnished to do so,
-  subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-  FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-If not otherwise stated all game graphics (indepedend of its format) are licensed under
-
-  Creative Commons License: Images are licensed under a
-  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-  
-  * http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US
+This graphics is licensed under a
+http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 -->
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -82,7 +56,43 @@ If not otherwise stated all game graphics (indepedend of its format) are license
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title>Oware</dc:title>
+        <dc:date>2014-08-27</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Oliver Merkel, Merkel(dot)Oliver (at)web(dot) de</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Oliver Merkel, Merkel(dot)Oliver (at)web(dot) de</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Oliver Merkel, Merkel(dot)Oliver (at)web(dot) de</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:language>en-GB</dc:language>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
