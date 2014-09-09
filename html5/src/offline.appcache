@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.2
+# v0.3
 css/index.css
 img/icons/cc_by_nc_sa.png
 img/icons/favicon.ico
@@ -13,6 +13,7 @@ img/icons/trou-bonduc04-120.png
 img/icons/trou-bonduc04-128.png
 img/icons/trou-bonduc04-256.png
 img/icons/trou-bonduc04-512.png
+img/adinkra.svg
 img/board01.png
 img/board_initial.svg
 img/bonduc01-256.png

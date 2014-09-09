@@ -77,7 +77,7 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
            rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
