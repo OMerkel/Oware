@@ -136,7 +136,7 @@ In case the sowing will reach the chosen starting bowl of
 the turn again then this bowl is skipped each time. Such that
 this bowl will remain empty in the end of this player's turn.
 
-| <img height="370" ondragstart="return false;" alt="Example of am opening turn, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_sowing1.jpg" /> |
+| <img height="370" ondragstart="return false;" alt="Example of an opening turn, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_sowing1.jpg" /> |
 | --- |
 | <i>Example of a player's opening turn: Assume the player decides to pick up all 4 seeds from bowl 5. Finally the turn ends by sowing in counter clockwise direction in bowl 9 here.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
