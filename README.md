@@ -135,20 +135,14 @@ the consecutive bowls in counter clockwise direction.
 In case the sowing will reach the chosen starting bowl of
 the turn again then this bowl is skipped each time. Such that
 this bowl will remain empty in the end of this player's turn.
+
 | <img height="370" ondragstart="return false;" alt="Example of am opening turn, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_sowing1.jpg" /> |
 | --- |
-| <i>Example of a player's opening turn: Assume the player
-decides to pick up all 4 seeds from bowl 5. Finally the turn
-ends by sowing in counter clockwise direction in bowl 9
-here.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+| <i>Example of a player's opening turn: Assume the player decides to pick up all 4 seeds from bowl 5. Finally the turn ends by sowing in counter clockwise direction in bowl 9 here.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 | <img height="370" ondragstart="return false;" alt="How to harvest? Own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting1.jpg" /> |
 | --- |
-| <i>How to harvest? Assume the board situation shown
-in the diagram above. Opponent scored 2 points already.
-The active player can decide to pick up seeds from either
-bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6
-will allow to harvest seeds as follows&#8230;<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+| <i>How to harvest? Assume the board situation shown in the diagram above. Opponent scored 2 points already. The active player can decide to pick up seeds from either bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6 will allow to harvest seeds as follows&#8230;<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 #### Harvesting
 
@@ -160,10 +154,7 @@ out of game play and scoring these.
 
 | <img height="370" ondragstart="return false;" alt="Variant: Picking up the 7 seeds from bowl 4, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting2.jpg" /> |
 | --- |
-| <i>Variant: Picking up the 7 seeds from bowl 4, then
-sowing these will distribute the last seed into bowl 11.
-Since bowl 11 contains 2 seeds now these will be harvested.
-Player's score is increased by these 2 seeds.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+| <i>Variant: Picking up the 7 seeds from bowl 4, then sowing these will distribute the last seed into bowl 11. Since bowl 11 contains 2 seeds now these will be harvested. Player's score is increased by these 2 seeds.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 In case of previous direct adjacent bowls (in clockwise
 direction) being opponent's bowls, too, holding exactly 2 or 3
@@ -175,14 +166,7 @@ directly adjacent.
 
 | <img height="370" ondragstart="return false;" alt="Variant: Alternatively picking up the 6 seeds from bowl 6, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting3.jpg" /> |
 | --- |
-| <i>Variant: Alternatively picking up the 6 seeds
-from bowl 6, then sowing these will distribute the
-last seed into bowl 12.
-Since bowl 12 contains 3 seeds now these will be harvested.
-Previous bowl 11 being directly adjacent is scored with 2
-seeds, too. Bowl 10 does not contain 2 or 3 seeds so stop
-harvesting. Player's score is increased by these 5 seeds
-in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+| <i>Variant: Alternatively picking up the 6 seeds from bowl 6, then sowing these will distribute the last seed into bowl 12. Since bowl 12 contains 3 seeds now these will be harvested. Previous bowl 11 being directly adjacent is scored with 2 seeds, too. Bowl 10 does not contain 2 or 3 seeds so stop harvesting. Player's score is increased by these 5 seeds in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 Taking and scoring all remaining seeds of the opponent's row
 completely at once is called a <em>Grand Slam</em>. Such a
@@ -235,8 +219,7 @@ misinterpreted as being a heart or love symbol).
 
 | <img width="640" ondragstart="return false;" alt="Adinkra symbols with partly religious meaning or background, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/adinkra.jpg" /> |
 | --- |
-| <i>Adinkra symbols with partly religious meaning or background:<br />
-Gye Nyame, Akoben, Sankofa<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+| <i>Adinkra symbols with partly religious meaning or background:<br /> Gye Nyame, Akoben, Sankofa<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 Typical tokens controlled by the players could be <em>nickernuts</em>. These are tropical
 seeds of a shrub called <b>Bonduc</b> (Latin, botanical: <em>Caesalpinia bonduc</em>).
