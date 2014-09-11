@@ -34,8 +34,9 @@ Portuguese colonialism adopting parts of African culture.
 There is a wide ranged class of games called <em>Mancala (Manquala)</em> games.
 Often the term <em>Sowing Games</em> is used, too.
 
-The term <em>Mancala (also Manqala, Mankala)</em> is derived from the Arabic
-term <b>naqalah</b> with its meaning <b>to move</b> an object. These class of
+The term <em>Mancala (also Manqala, Mankala)</em> is derived
+from the Arabic term <b>naqalah</b> ( &#1606;&#1602;&#1604; ) with
+its meaning <b>to move</b> an object. These class of
 games are well known worldwide. Nonetheless rules, structure of fields
 on board and even number of players strongly varies from game to game
 depending on geographic location, language and culture. Such that
@@ -134,19 +135,54 @@ the consecutive bowls in counter clockwise direction.
 In case the sowing will reach the chosen starting bowl of
 the turn again then this bowl is skipped each time. Such that
 this bowl will remain empty in the end of this player's turn.
+| <img height="370" ondragstart="return false;" alt="Example of am opening turn, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_sowing1.jpg" /> |
+| --- |
+| <i>Example of a player's opening turn: Assume the player
+decides to pick up all 4 seeds from bowl 5. Finally the turn
+ends by sowing in counter clockwise direction in bowl 9
+here.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
+| <img height="370" ondragstart="return false;" alt="How to harvest? Own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting1.jpg" /> |
+| --- |
+| <i>How to harvest? Assume the board situation shown
+in the diagram above. Opponent scored 2 points already.
+The active player can decide to pick up seeds from either
+bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6
+will allow to harvest seeds as follows&#8230;<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 #### Harvesting
 
-A player will score (also called <em>harvesting</em>) on sowing the
-last seed of his turn into an opponent's bowl holding 2 or 3 seeds
-including the last one sown. This is done by taking these seeds
-out of game play and scoring these. In case of previous direct
-adjacent bowls (in clockwise direction) being opponent's bowls, too,
-holding 2 or 3 seeds, these are taken away being scored as well.
+A player will score (also called <em>harvesting</em>) on
+sowing the last seed of his turn into an opponent's
+bowl holding 2 or 3 seeds including the last
+one sown. This is done by taking these seeds
+out of game play and scoring these.
+
+| <img height="370" ondragstart="return false;" alt="Variant: Picking up the 7 seeds from bowl 4, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting2.jpg" /> |
+| --- |
+| <i>Variant: Picking up the 7 seeds from bowl 4, then
+sowing these will distribute the last seed into bowl 11.
+Since bowl 11 contains 2 seeds now these will be harvested.
+Player's score is increased by these 2 seeds.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
+In case of previous direct adjacent bowls (in clockwise
+direction) being opponent's bowls, too, holding exactly 2 or 3
+seeds, these are taken away being scored as well.
 Reaching any other bowl without any seed, just one seed or four
 or more seeds will end the scoring even if any further
-opponent's bowls are containing 2 or 3 seeds not being
+opponent's bowls are containing exactly 2 or 3 seeds not being
 directly adjacent.
+
+| <img height="370" ondragstart="return false;" alt="Variant: Alternatively picking up the 6 seeds from bowl 6, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting3.jpg" /> |
+| --- |
+| <i>Variant: Alternatively picking up the 6 seeds
+from bowl 6, then sowing these will distribute the
+last seed into bowl 12.
+Since bowl 12 contains 3 seeds now these will be harvested.
+Previous bowl 11 being directly adjacent is scored with 2
+seeds, too. Bowl 10 does not contain 2 or 3 seeds so stop
+harvesting. Player's score is increased by these 5 seeds
+in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 Taking and scoring all remaining seeds of the opponent's row
 completely at once is called a <em>Grand Slam</em>. Such a
@@ -182,22 +218,27 @@ that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
 patterns or Akan cultural motifs.
 
-Please be aware and respect that motifs might include <em>Adinkra</em>
-symbols with partly religious meanings or background. Popular is the
-use of <em>Adinkra</em> symbol <em>Gye Nyame</em> that
-could translate to <em>Except God (I fear none)</em> (supremacy of God) or
-<em>Nyame Ye Ohene</em> (meaning <em>God is King</em>),
-<em>Akoben</em> (representing a <em>War horn</em>, symbol of valor),
-<em>Sankofa</em> (meaning that it is <em>acceptable to retry</em> or
-to <em>learn from the past</em> or <em>go back and get anything
-you might have forgotten</em>, this sign of wisdom is often
-misinterpreted as being a heart or love symbol).
-
 | <img width="640" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
 | --- |
 | <i>Folded Oware set with traditional ancient African pattern<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-Typical tokens could be <em>nickernuts</em>. These are tropical
+Please be aware and respect that motifs might include <em>Adinkra</em>
+symbols with partly religious meaning or background. Popular is the
+use of <em>Adinkra</em> symbol <em>Gye Nyame</em> that
+could translate to <em>Except God (I fear none)</em> (supremacy of God) or
+<em>Nyame Ye Ohene</em> (meaning <em>God is King</em>),
+<em>Akoben</em> (representing a <em>War horn</em>, symbol of valor),
+<em>Sankofa</em> (meaning that it is <em>acceptable or feasible to retry</em> or
+to <em>learn from the past</em> or <em>go back and get or pick up anything
+you might have forgotten</em>, this sign of wisdom is often
+misinterpreted as being a heart or love symbol).
+
+| <img width="640" ondragstart="return false;" alt="Adinkra symbols with partly religious meaning or background, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/adinkra.jpg" /> |
+| --- |
+| <i>Adinkra symbols with partly religious meaning or background:<br />
+Gye Nyame, Akoben, Sankofa<br />Own image, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
+Typical tokens controlled by the players could be <em>nickernuts</em>. These are tropical
 seeds of a shrub called <b>Bonduc</b> (Latin, botanical: <em>Caesalpinia bonduc</em>).
 Bonduc seeds are widely used for traditional African jewellery due to it's
 clay alike precious look and can be found as a medical ingredient as well.
