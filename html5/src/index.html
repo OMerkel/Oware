@@ -196,10 +196,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
         Such that the other player's row is included, too, interacting
         with the opponent's side of the board.</p>
       <p>Sowing is performed with exactly one seed per bowl following
-        the consecutive bowls in counter clockwise direction.
-        In case the sowing will reach the chosen starting bowl of
-        the turn again then this bowl is skipped each time. Such that
-        this bowl will remain empty in the end of this player's turn.</p>
+        the consecutive bowls in counter clockwise direction.</p>
       <figure class='diagram' style='min-width: 320px;'>
         <embed type='image/svg+xml'
           src='img/board_sowing1.svg' />
@@ -208,7 +205,12 @@ If not otherwise stated all game graphics (independent of its format) are licens
         ends by sowing in counter clockwise direction in bowl 9
         here.</figcaption>
       </figure>
-      <br />
+      <h4>Harvesting</h4>
+      <p>A player will score (also called <em>harvesting</em>) on
+        sowing the last seed of his turn into an opponent's
+        bowl holding exactly 2 or 3 seeds including the last
+        one sown. This is done by taking these seeds
+        out of game play and scoring these.</p>
       <figure class='diagram' style='min-width: 320px;'>
         <embed type='image/svg+xml'
           src='img/board_harvesting1.svg' />
@@ -218,12 +220,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
         bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6
         will allow to harvest seeds as follows&#8230;</figcaption>
       </figure>
-      <h4>Harvesting</h4>
-      <p>A player will score (also called <em>harvesting</em>) on
-        sowing the last seed of his turn into an opponent's
-        bowl holding exactly 2 or 3 seeds including the last
-        one sown. This is done by taking these seeds
-        out of game play and scoring these.</p>
+      <br />
       <figure class='diagram' style='min-width: 320px;'>
         <embed type='image/svg+xml'
           src='img/board_harvesting2.svg' />
@@ -250,6 +247,28 @@ If not otherwise stated all game graphics (independent of its format) are licens
         seeds, too. Bowl 10 does contain neither 2 nor 3 seeds so stop
         harvesting. Player's score is increased by these 5 seeds
         in total.</figcaption>
+      </figure>
+      <h4>Special Situations and Rules</h4>
+      <p>Bowls containing a huge amount of seeds (like more than eleven seeds)
+        are called <em>Kroo</em>. In case of picking up a <em>Kroo</em> the
+        sowing will reach the chosen starting bowl of the turn again. Then
+        seeding into this starting bowl is skipped each time. Such that
+        this bowl will remain empty in the end of this player's turn.</p>
+      <figure class='diagram' style='min-width: 320px;'>
+        <embed type='image/svg+xml'
+          src='img/board_kroo1.svg' />
+        <figcaption>Bowl 4 is a <em>Kroo</em> with a high amount of 16 seeds.
+          </figcaption>
+      </figure>
+      <br />
+      <figure class='diagram' style='min-width: 320px;'>
+        <embed type='image/svg+xml'
+          src='img/board_kroo2.svg' />
+        <figcaption>Player decides to pick up the <em>Kroo</em> containing
+          16 Bonducs here. As seeding is reaching the initial bowl it is skipped.
+          The last Bonduc is sown in opponent's bowl 9 and the player scores
+          3 seeds. Previous opponent's bowls 8 and 7 are scored, too. Thus the player
+          scores additional 9 seeds in total.</figcaption>
       </figure>
       <p>Taking and scoring all remaining seeds of the opponent's row
         completely at once is called a <em>Grand Slam</em>. Such a

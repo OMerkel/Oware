@@ -113,7 +113,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
          id="scoresouth"
          transform="translate(300,250)">
         <image
-           sodipodi:absref="C:\community\oware\html5\src\img\bonduc01-256.png"
            xlink:href="bonduc01-256.png"
            width="34"
            height="30"
@@ -134,7 +133,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
          transform="matrix(-1,0,0,-1,-300,-250)"
          id="scorenorth">
         <image
-           sodipodi:absref="C:\community\oware\html5\src\img\bonduc01-256.png"
            xlink:href="bonduc01-256.png"
            id="scorenorthbead"
            height="30"
