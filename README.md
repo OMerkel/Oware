@@ -5,6 +5,7 @@ Oware / Ouril
 * <em>runs in various browsers on</em>
     * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
+* <em>runs even offline and is installable on platforms like Android, FirefoxOS, iOS.</em>
 
 <b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
@@ -31,7 +32,8 @@ Portuguese colonialism adopting parts of African culture.
 | --- | --- |
 | <i>Oware/Ouril installed on iOS home screen,<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</i> | <i>Playing Oware on IPad in fullscreen,<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</i> |
 
-There is a wide ranged class of games called <em>Mancala (Manquala)</em> games.
+There is a wide ranged class of games called
+<b>Mancala</b> <em>(Manquala)</em> games.
 Often the term <em>Sowing Games</em> is used, too.
 
 The term <em>Mancala (also Manqala, Mankala)</em> is derived
@@ -132,25 +134,23 @@ with the opponent's side of the board.
 
 Sowing is performed with exactly one seed per bowl following
 the consecutive bowls in counter clockwise direction.
-In case the sowing will reach the chosen starting bowl of
-the turn again then this bowl is skipped each time. Such that
-this bowl will remain empty in the end of this player's turn.
 
 | <img height="370" ondragstart="return false;" alt="Example of an opening turn, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_sowing1.jpg" /> |
 | --- |
 | <i>Example of a player's opening turn: Assume the player decides to pick up all 4 seeds from bowl 5. Finally the turn ends by sowing in counter clockwise direction in bowl 9 here.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-| <img height="370" ondragstart="return false;" alt="How to harvest? Own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting1.jpg" /> |
-| --- |
-| <i>How to harvest? Assume the board situation shown in the diagram above. Opponent scored 2 points already. The active player can decide to pick up seeds from either bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6 will allow to harvest seeds as follows&#8230;<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
-
 #### Harvesting
 
 A player will score (also called <em>harvesting</em>) on
 sowing the last seed of his turn into an opponent's
-bowl holding 2 or 3 seeds including the last
+bowl holding exactly 2 or 3 seeds including the last
 one sown. This is done by taking these seeds
 out of game play and scoring these.
+
+| <img height="370" ondragstart="return false;" alt="How to harvest? Own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting1.jpg" /> |
+| --- |
+| <i>How to harvest? Assume the board situation shown in the diagram above. Opponent scored 2 points already. The active player can decide to pick up seeds from either bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6 will allow to harvest seeds as follows&#8230;<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
 
 | <img height="370" ondragstart="return false;" alt="Variant: Picking up the 7 seeds from bowl 4, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting2.jpg" /> |
 | --- |
@@ -167,6 +167,23 @@ directly adjacent.
 | <img height="370" ondragstart="return false;" alt="Variant: Alternatively picking up the 6 seeds from bowl 6, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting3.jpg" /> |
 | --- |
 | <i>Variant: Alternatively picking up the 6 seeds from bowl 6, then sowing these will distribute the last seed into bowl 12. Since bowl 12 contains 3 seeds now these will be harvested. Previous bowl 11 being directly adjacent is scored with 2 seeds, too. Bowl 10 does contain neither 2 nor 3 seeds so stop harvesting. Player's score is increased by these 5 seeds in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
+#### Special Situations and Rules
+
+Bowls containing a huge amount of seeds (like more than eleven seeds)
+are called <em>Kroo</em>. In case of picking up a <em>Kroo</em> the
+sowing will reach the chosen starting bowl of the turn again. Then
+seeding into this starting bowl is skipped each time. Such that
+this bowl will remain empty in the end of this player's turn.
+
+| <img height="370" ondragstart="return false;" alt="Bowl 4 is a <em>Kroo</em> with a high amount of 16 seeds, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_kroo1.jpg" /> |
+| --- |
+| <i>Bowl 4 is a <em>Kroo</em> with a high amount of 16 seeds.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
+
+
+| <img height="370" ondragstart="return false;" alt="Player decides to pick up the <em>Kroo</em> containing 16 Bonducs here. Reaching the initial bowl it is skipped. Bowls 9, 8, and 7 are scored with 9 seeds in total, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_kroo2.jpg" /> |
+| --- |
+| <i>Player decides to pick up the <em>Kroo</em> containing 16 Bonducs here. As seeding is reaching the initial bowl it is skipped. The last Bonduc is sown in opponent's bowl 9 and the player scores 3 seeds. Previous opponent's bowls 8 and 7 are scored, too. Thus the player scores additional 9 seeds in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 Taking and scoring all remaining seeds of the opponent's row
 completely at once is called a <em>Grand Slam</em>. Such a
@@ -200,7 +217,7 @@ then the chance is quite high that the board shall be made of
 are available in simple travel editions made of two similar half boards
 that can be folded to hold the game tokens securely then. Often these
 boards come along with decorative crafted and carved traditional themed
-patterns or Akan cultural motifs.
+patterns or motifs.
 
 | <img width="640" ondragstart="return false;" alt="Folded Oware set with traditional ancient African pattern, Own image, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/html5/src/img/folded_oware_set.jpg" /> |
 | --- |
