@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.3
+# v0.4
 css/index.css
 img/icons/cc_by_nc_sa.png
 img/icons/favicon.ico
@@ -18,6 +18,8 @@ img/board_harvesting1.svg
 img/board_harvesting2.svg
 img/board_harvesting3.svg
 img/board_initial.svg
+img/board_kroo1.svg
+img/board_kroo2.svg
 img/board_sowing1.svg
 img/bonduc01-256.png
 img/folded_oware_set.jpg
