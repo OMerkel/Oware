@@ -88,7 +88,26 @@ Hmi.prototype.init = function() {
 };
 
 Hmi.prototype.update = function() {
-  console.log('resize / update');
+  var innerWidth = window.innerWidth,
+    minSize = 32;
+  var size = 0.06 * innerWidth < minSize ? minSize : 0.06 * innerWidth;
+  $('#customMenu').css({
+    'width': size+'px', 'height': size+'px',
+    'background-size': size+'px ' + size+'px',
+  });
+  size = 0.05 * innerWidth < minSize ? minSize : 0.05 * innerWidth;
+  $('#customBackRules').css({
+    'width': size+'px', 'height': size+'px',
+    'background-size': size+'px ' + size+'px',
+  });
+  $('#customBackOptions').css({
+    'width': size+'px', 'height': size+'px',
+    'background-size': size+'px ' + size+'px',
+  });
+  $('#customBackAbout').css({
+    'width': size+'px', 'height': size+'px',
+    'background-size': size+'px ' + size+'px',
+  });
 };
 
 Hmi.prototype.redraw = function(board) {
@@ -164,6 +183,16 @@ Hmi.prototype.myChoice = function( e ) {
 
 Hmi.prototype.restart = function() {
   engine.postMessage({ 'class': 'request', 'request': 'restart' });
+};
+
+function linkRules( e ) {
+  $('body').pagecontainer('change', $('#rules-page'),
+    { transition: 'pop', changeHash: false });
+};
+
+function backButton( e ) {
+  $('body').pagecontainer('change', $('#game-page'),
+    { transition: 'slide', changeHash: false });
 };
 
 function newGame() {

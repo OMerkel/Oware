@@ -63,7 +63,8 @@ If not otherwise stated all game graphics (independent of its format) are licens
 <div data-role='page' data-theme='b' id='game-page' class='mybackground'>
   <div data-role='header' data-position='fixed'>
     <center id='myheader'>Oware</center>
-    <a href='#left-panel' data-icon='bars' data-iconpos='notext'>Navigation</a>
+    <a href='#left-panel' id='customMenu' class='customMenu'
+      data-icon='custom' data-iconpos='notext'>Menu</a>
   </div><!-- /header -->
   <div role='main' class='mycontent ui-content'>
     <div id='game-region'>
@@ -85,20 +86,20 @@ If not otherwise stated all game graphics (independent of its format) are licens
       data-icon='false' data-global-nav='demos' class='jqm-list'>
       <li data-icon='back' data-rel='close'><a href='#'>Back</a></li>
       <li data-role='list-divider'>&nbsp;</li>
-      <li data-icon='star' ><a id='new' href='#'>New</a></li>
-      <li data-icon='action' ><a href='#rules-page' data-rel='page'
+      <li data-icon='star'><a id='new'>New</a></li>
+      <li data-icon='action'><a href='#rules-page' data-rel='page'
         data-transition='pop'>Rules&#8230;</a></li>
       <li data-icon='grid'><a href='#options-menu' data-rel='page'
         data-transition='slideup'>Options&#8230;</a></li>
-      <li data-icon='info' ><a href='#about-page' data-rel='page'
+      <li data-icon='info'><a href='#about-page' data-rel='page'
         data-transition='pop'>About&#8230;</a></li>
     </ul>
   </div><!-- /panel -->
 </div><!-- /page -->
 <div data-role='page' data-theme='b' id='rules-page'>
   <div data-role='header'>
-    <a href='#' data-rel='back'
-      class='ui-btn ui-icon-delete ui-btn-icon-right ui-btn-icon-notext ui-corner-all'>Back</a>
+    <a href='#' data-rel='back' id='customBackRules'
+      class='customBack ui-btn ui-icon-custom ui-btn-icon-right ui-btn-icon-notext ui-corner-all'>Back</a>
     <h4>Rules</h4>
   </div><!-- /header -->
   <div role='main' class='ui-content'>
@@ -375,10 +376,11 @@ If not otherwise stated all game graphics (independent of its format) are licens
 <div data-role='page' data-theme='b' id='options-menu'>
   <div data-role='header'>
     <h1><small>Options</small></h1>
-    <a href='#' data-rel='back' data-role='button'
-      data-icon='delete' data-iconpos='notext' class='ui-btn-left'>Close</a>
+    <a href='#' data-rel='back' id='customBackOptions'
+      class='customBack ui-btn ui-icon-custom ui-btn-icon-left ui-btn-icon-notext ui-corner-all'>Close</a>
   </div><!-- /header -->
   <div data-role='content'>
+    <br />
     <form>
       <fieldset data-role='controlgroup'>
         <legend>Sowing Speed</legend>
@@ -409,8 +411,8 @@ If not otherwise stated all game graphics (independent of its format) are licens
 
 <div data-role='page' data-theme='b' id='about-page'>
   <div data-role='header'>
-    <a href='#' data-rel='back'
-      class='ui-btn ui-icon-delete ui-btn-icon-right ui-btn-icon-notext ui-corner-all'>Back</a>
+    <a href='#' data-rel='back' id='customBackAbout'
+      class='customBack ui-btn ui-icon-custom ui-btn-icon-right ui-btn-icon-notext ui-corner-all'>Back</a>
     <h4>About Oware</h4>
   </div><!-- /header -->
   <div role='main' class='ui-content'>
