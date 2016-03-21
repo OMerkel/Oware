@@ -1,11 +1,12 @@
-Oware / Ouril
+<img alt="UCThello icon" width="64" src="html5/src/img/icons/trou-bonduc04-128.png" /> Oware / Ouril
 =============
 
-* <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src/
-* <em>runs in various browsers on</em>
+* <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src
+* <em>Also published in</em> <a href="https://marketplace.firefox.com/app/oware"><img align="middle" width="150px" src="https://marketplace.cdn.mozilla.net/media/fireplace/img/pretty/marketplace_logo.png" /></a>
+* <em>Runs in various browsers on</em>
     * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
-* <em>runs even offline and is installable on platforms like Android, FirefoxOS, iOS.</em>
+* <em>Runs even offline and is installable on platforms like Android, FirefoxOS, iOS with Offline Appcache Support.</em>
 
 <b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
