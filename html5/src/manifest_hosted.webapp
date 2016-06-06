@@ -1,20 +1,19 @@
 {
-  "version": "0.5",
+  "version": "0.6",
   "name": "Oware",
   "description": "Oware and Ouril",
   "launch_path": "/Oware/html5/src/index.html",
   "orientation": "landscape-primary",
-  "appcache_path": "/Oware/html5/src/offline.appcache",
   "icons": {
-    "16": "/Oware/html5/src/img/icons/trou-bonduc04-16.png",
-    "32": "/Oware/html5/src/img/icons/trou-bonduc04-32.png",
-    "48": "/Oware/html5/src/img/icons/trou-bonduc04-48.png",
-    "60": "/Oware/html5/src/img/icons/trou-bonduc04-60.png",
-    "64": "/Oware/html5/src/img/icons/trou-bonduc04-64.png",
-    "90": "/Oware/html5/src/img/icons/trou-bonduc04-90.png",
-    "120": "/Oware/html5/src/img/icons/trou-bonduc04-120.png",
-    "128": "/Oware/html5/src/img/icons/trou-bonduc04-128.png",
-    "256": "/Oware/html5/src/img/icons/trou-bonduc04-256.png"
+    "16": "/Oware/html5/src/img/icons/oware16.png",
+    "32": "/Oware/html5/src/img/icons/oware32.png",
+    "48": "/Oware/html5/src/img/icons/oware48.png",
+    "60": "/Oware/html5/src/img/icons/oware60.png",
+    "64": "/Oware/html5/src/img/icons/oware64.png",
+    "90": "/Oware/html5/src/img/icons/oware90.png",
+    "120": "/Oware/html5/src/img/icons/oware120.png",
+    "128": "/Oware/html5/src/img/icons/oware128.png",
+    "256": "/Oware/html5/src/img/icons/oware256.png"
   },
   "developer": {
     "name": "Oliver Merkel",

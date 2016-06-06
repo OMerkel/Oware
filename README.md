@@ -1,4 +1,4 @@
-<img alt="UCThello icon" width="64" src="html5/src/img/icons/trou-bonduc04-128.png" /> Oware / Ouril
+<img alt="UCThello icon" width="64" src="html5/src/img/icons/oware128.png" /> Oware / Ouril
 =============
 
 * <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src

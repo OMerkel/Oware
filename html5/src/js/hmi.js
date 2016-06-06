@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2014 Oliver Merkel
+// Copyright (c) 2016 Oliver Merkel
 // All rights reserved.
 //
 // @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
@@ -197,6 +197,7 @@ function backButton( e ) {
 
 function newGame() {
   hmi.restart();
+  $( '#left-panel' ).panel( 'close' );
 }
 
 function setHeader() {

@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html manifest="offline.appcache">
-<head profile="http://dublincore.org/documents/dcq-html/">
-  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon" />
-  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8" />
-  <meta name="AUTHOR" content="Oliver Merkel" />
-  <meta name="COPYRIGHT" content="Oliver Merkel" />
-  <meta name="DC.creator" content="Oliver Merkel" />
-  <meta name="DC.contributor" content="Oliver Merkel" />
-  <meta name="DC.rights" content="
+<html>
+<head profile='http://dublincore.org/documents/dcq-html/'>
+  <link rel='icon' href='img/icons/favicon.ico' type='image/x-icon' />
+  <link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' />
+  <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' />
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta charset='UTF-8' />
+  <meta name='AUTHOR' content='Oliver Merkel' />
+  <meta name='COPYRIGHT' content='Oliver Merkel' />
+  <meta name='DC.creator' content='Oliver Merkel' />
+  <meta name='DC.contributor' content='Oliver Merkel' />
+  <meta name='DC.rights' content="
 See file named LICENSE being part of the repository.
 
-Copyright (c) 2014
+Copyright (c) 2016
 @author Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de.
 All rights reserved.
 
-Logos and trademarks belong to their respective owners.
+Logos, brands, and trademarks belong to their respective owners.
 
 All source code also including code parts written in HMTL, Javascript, CSS, Python is under MIT License.
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
+Copyright (c) 2016 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the &quot;Software&quot;), to deal in
@@ -42,20 +42,20 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-If not otherwise stated all game graphics (independent of its format) are licensed under
-    http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US
+If not otherwise stated all graphics (independent of its format) are licensed under
+    http://creativecommons.org/licenses/by-nc-sa/4.0
     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 " />
   <title>Oware / Ouril / Mancala</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="apple-touch-icon" href="img/icons/trou-bonduc04-128.png" />
+  <meta name='apple-mobile-web-app-capable' content='yes' />
+  <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+  <link rel='apple-touch-icon' href='img/icons/oware128.png' />
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
     name='viewport' />
-  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.3/jquery.mobile-1.4.3.css' />
+  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css' />
   <link rel='stylesheet' type='text/css' href='css/index.css' />
-  <script src='thirdparty/jquery-1.11.1.js' type='text/javascript'></script>
-  <script src='thirdparty/jquery.mobile-1.4.3/jquery.mobile-1.4.3.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery-2.2.4.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js' type='text/javascript'></script>
   <script src='js/common.js' type='text/javascript'></script>
   <script src='js/hmi.js' type='text/javascript' defer></script>
 </head>
@@ -73,10 +73,10 @@ If not otherwise stated all game graphics (independent of its format) are licens
         <p>Please consider enabling Javascript if disabled through settings.</p>
       </noscript>
       <center>
-        <embed name="board"
-          type="image/svg+xml"
-          src="img/oware-game.svg"
-          width="90%" border="1" />
+        <embed name='board'
+          type='image/svg+xml'
+          src='img/oware-game.svg'
+          width='90%' border='1' />
       </center>
     </div>
   </div><!-- /content -->
@@ -87,6 +87,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
       <li data-icon='back' data-rel='close'><a href='#'>Back</a></li>
       <li data-role='list-divider'>&nbsp;</li>
       <li data-icon='star'><a id='new'>New</a></li>
+      <li data-role='list-divider'>&nbsp;</li>
       <li data-icon='action'><a href='#rules-page' data-rel='page'
         data-transition='pop'>Rules&#8230;</a></li>
       <li data-icon='grid'><a href='#options-menu' data-rel='page'
@@ -106,9 +107,9 @@ If not otherwise stated all game graphics (independent of its format) are licens
     <p>There is a wide ranged class of games called
       <b>Mancala</b> <em>(Manquala)</em> games.
       Often the term <em>Sowing Games</em> is used, too.</p>
-    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
-      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
+    <div data-role='collapsible-set' data-theme='c' data-content-theme='d'
+      data-iconpos='right' data-collapsed-icon='arrow-l' data-expanded-icon='arrow-d'>
+    <div data-role='collapsible'>
       <h4>Mancala and Related Terminology</h4>
       <p>The term <em>Mancala (also Manqala, Mankala)</em> is derived
         from the Arabic term <b>naqalah</b> ( &#1606;&#1602;&#1604; ) with
@@ -157,16 +158,16 @@ If not otherwise stated all game graphics (independent of its format) are licens
     </div><!-- collapsible-set -->
     <p><b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
       is a <em>Mancala (Manquala)</em> game.</p>
-    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
-      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
+    <div data-role='collapsible-set' data-theme='c' data-content-theme='d'
+      data-iconpos='right' data-collapsed-icon='arrow-l' data-expanded-icon='arrow-d'>
+    <div data-role='collapsible'>
       <h3>Oware Rules</h3>
       <h4>Game Components</h4>
       <p>This Oware implementation uses a game board with 12 bowls in
         total - consisting of 2 rows having 6 bowls each. Initially
         each bowl holds 4 Bonduc seeds.</p>
       <figure class='diagram' style='min-width: 320px;'>
-        <embed type="image/svg+xml"
+        <embed type='image/svg+xml'
           src='img/board_initial.svg' />
         <figcaption>Initial board position in Oware,
           while one player starts own turns with any chosen bowl 1 to 6,
@@ -292,7 +293,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
         The player scoring higher wins.</p>
       <p>Such that the game could end as a draw on equal scores.</p>
     </div><!-- collapsible -->
-    <div data-role="collapsible">
+    <div data-role='collapsible'>
       <h4>Typical Oware Game Material</h4>
       <p>If you are looking forward to getting a typical <b>Oware game</b> (<em>Ghana</em>)
         then the chance is quite high that the board shall be made of
@@ -317,7 +318,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
         you might have forgotten</em>, this sign of wisdom is often
         misinterpreted as being a heart or love symbol).</p>
       <figure class='diagram'>
-        <embed type="image/svg+xml"
+        <embed type='image/svg+xml'
           src='img/adinkra.svg' />
         <figcaption>Adinkra symbols with partly religious meaning or background:<br />
         Gye Nyame, Akoben, Sankofa</figcaption>
@@ -335,7 +336,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
         size of a whole table. Watch out and find some of these gems using
         your preferred web search engine.</p>
     </div><!-- collapsible -->
-    <div data-role="collapsible">
+    <div data-role='collapsible'>
       <h4>Oware and its Origin</h4>
       <p>With given rules as presented here today's name of the game is <em>Oware</em>.
         Oware is an <em>Akan</em> culture term. Commonly reported Oware is
@@ -349,9 +350,9 @@ If not otherwise stated all game graphics (independent of its format) are licens
     <p><b>Ouril</b> is originated and is played in the Republic of Cabo Verde - an island
       located in the Atlantic ocean. Ouril is popular in Portuguese influenced countries,
       too, due to former Portuguese colonialism adopting parts of African culture.</p>
-    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
-      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
+    <div data-role='collapsible-set' data-theme='c' data-content-theme='d'
+      data-iconpos='right' data-collapsed-icon='arrow-l' data-expanded-icon='arrow-d'>
+    <div data-role='collapsible'>
       <h4>Ouril Rules</h4>
       <p><em>Ouril</em> has slightly different rules compared towards Oware.</p>
       <p>Picking up <em>single seeds</em> from own bowls is allowed only as long as none other
@@ -368,6 +369,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
       </ul>
     </div><!-- collapsible -->
     </div><!-- collapsible-set -->
+    <p>Have fun and enjoy the game&#8230;</p>
     <a href='#' data-role='button' data-icon='back'
       data-rel='back'>Back</a>
   </div><!-- /content -->
@@ -382,6 +384,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
   <div data-role='content'>
     <br />
     <form>
+      <i>Mind: All selections will be applied on next move or new game.</i>
       <fieldset data-role='controlgroup'>
         <legend>Sowing Speed</legend>
         <input name='checkbox-speed' id='sowingspeed'
@@ -423,13 +426,13 @@ If not otherwise stated all game graphics (independent of its format) are licens
         href='http://creativecommons.org/licenses/by-nc-nd/4.0/'
         target='_blank'>cc-by-nc-nd 4.0</a>.</figcaption>
     </figure>
-    <p>Copyright (c) 2014<br />
+    <p>Copyright (c) 2016<br />
     <em>@author</em> Oliver Merkel, Merkel(dot) Oliver(at) web(dot) de.<br />
     All rights reserved.<br />
-    Logos and trademarks belong to their respective owners.</p>
+    Logos, brands, and trademarks belong to their respective owners.</p>
     <p>All source code also including code parts written in HMTL, Javascript, CSS, Python is under MIT License.</p>
     <h4>The MIT License (MIT)</h4>
-    <p>Copyright (c) 2014 Oliver Merkel, Merkel(dot) Oliver(at) web(dot)de</p>
+    <p>Copyright (c) 2016 Oliver Merkel, Merkel(dot) Oliver(at) web(dot)de</p>
 
     <p>Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the &quot;Software&quot;), to deal in
@@ -448,17 +451,17 @@ If not otherwise stated all game graphics (independent of its format) are licens
     IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
-    <p>If not otherwise stated all game graphics (independent of its format) are licensed under
-      <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
-      target="_blank"><img alt="Creative Commons License" style="border-width:0"
-      src="img/icons/cc_by_nc_sa.png" /></a><br />Images are licensed under a
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
-      target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+    <p>If not otherwise stated all graphics (independent of its format) are licensed under
+      <br /><a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0'
+      target='_blank'><img alt='Creative Commons License' style='border-width:0'
+      src='img/icons/cc_by_nc_sa.png' /></a><br />Images are licensed under a
+      <a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0'
+      target='_blank'>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
       International License</a>.
     </p>
-    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
-      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
+    <div data-role='collapsible-set' data-theme='c' data-content-theme='d'
+      data-iconpos='right' data-collapsed-icon='arrow-l' data-expanded-icon='arrow-d'>
+    <div data-role='collapsible'>
       <h4>Mancala Principles and Concepts</h4>
       <p>The Oware ruleset used in this implementation is in the
         public domain due to its age and unknown authorship. It is
@@ -473,7 +476,7 @@ If not otherwise stated all game graphics (independent of its format) are licens
         the Atlantic islands of Cabo Verde and other Portuguese
         influenced regions elsewhere.</p>
     </div><!-- collapsible -->
-    <div data-role="collapsible">
+    <div data-role='collapsible'>
       <h4>Third Party Code Licenses</h4>
       <p>This <b>Oware</b> and <b>Ouril</b> implementation uses unmodified
       independent code libraries provided by <em>third parties</em>.
@@ -483,15 +486,15 @@ If not otherwise stated all game graphics (independent of its format) are licens
       any related list of conditions, disclaimers, and especially
       the copyright holders and authors of the corresponding third
       party functionality.</p>
-      <a href="https://github.com/jquery/jquery" data-role="button" data-theme="c"
-        rel="external" target="_blank" type="text/html"
-        title="jQuery - Repository">
-        <img src="thirdparty/jquery-favicon.ico" />
+      <a href='https://github.com/jquery/jquery' data-role='button' data-theme='c'
+        rel='external' target='_blank' type='text/html'
+        title='jQuery - Repository'>
+        <img src='thirdparty/jquery-favicon.ico' width='16' height='16' />
         jQuery: MIT</a>
-      <a href="https://github.com/jquery/jquery-mobile" data-role="button" data-theme="c"
-        rel="external" target="_blank" type="text/html"
-        title="jQuery Mobile - Repository">
-        <img src="thirdparty/jquery.mobile-1.4.3/demos/favicon.ico" />
+      <a href='https://github.com/jquery/jquery-mobile' data-role='button' data-theme='c'
+        rel='external' target='_blank' type='text/html'
+        title='jQuery Mobile - Repository'>
+        <img src='thirdparty/jquery.mobile-1.4.5/demos/favicon.ico' width='16' height='16' />
         jQuery Mobile: MIT</a>
     </div><!-- collapsible -->
     </div><!-- collapsible-set -->
