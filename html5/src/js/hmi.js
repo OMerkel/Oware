@@ -173,16 +173,25 @@ Hmi.prototype.myChoice = function( e ) {
       var selectedBowl = Number(idBowl.slice(-2));
       console.log('Selected bowl: ' + selectedBowl);
       var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
-      var rules = $('#rulesoware').is(':checked') ? 'Oware' : 'Ouril';
-      engine.postMessage({ class: 'request',
-        request: 'move', bowl: selectedBowl,
+      var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
+      var playerSouth = 'Human';
+      var playerNorth = 'Human';
+      engine.postMessage({ class: 'request', request: 'move',
+        bowl: selectedBowl,
+        playerSouth: playerSouth, playerNorth: playerNorth,
         sowingspeed: speed, rules: rules });
     }
   }
 };
 
 Hmi.prototype.restart = function() {
-  engine.postMessage({ 'class': 'request', 'request': 'restart' });
+  var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
+  var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
+  var playerSouth = 'Human';
+  var playerNorth = 'Human';
+  engine.postMessage({ class: 'request', request: 'restart',
+    playerSouth: playerSouth, playerNorth: playerNorth,
+    sowingspeed: speed, rules: rules });
 };
 
 function linkRules( e ) {
@@ -208,8 +217,13 @@ function setHeader() {
 function sync(event, ui) {
   if( 'game-page' == ui.toPage[0].id ) {
     hmi.init();
-    engine.postMessage({ class: 'request',
-      request: 'sync' });
+    var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
+    var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
+    var playerSouth = 'Human';
+    var playerNorth = 'Human';
+    engine.postMessage({ class: 'request', request: 'sync',
+      playerSouth: playerSouth, playerNorth: playerNorth,
+      sowingspeed: speed, rules: rules });
   }
 }
 
@@ -221,11 +235,17 @@ function init() {
   hmi.init();
   var $window = $(window);
   $window.resize( hmi.update );
-  engine = new Worker('js/engine.js');
+  engine = new Worker('js/controller.js');
   engine.addEventListener('message', function( ev ) {
     engineEventListener( ev );
   }, false);
-  engine.postMessage({ class: 'request', request: 'start' });
+  var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
+  var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
+  var playerSouth = 'Human';
+  var playerNorth = 'Human';
+  engine.postMessage({ class: 'request', request: 'start',
+    playerSouth: playerSouth, playerNorth: playerNorth,
+    sowingspeed: speed, rules: rules });
   $window.resize();
   $('#new').click( newGame );
   $('#rulesoware').click( setHeader );
