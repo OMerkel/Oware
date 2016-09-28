@@ -6,7 +6,7 @@
 * <em>Runs in various browsers on</em>
     * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
-* <em>Runs even offline and is installable on platforms like Android, FirefoxOS, iOS with Offline Appcache Support.</em>
+* <em>Runs even offline and is installable on platforms like Android, FirefoxOS, iOS.</em>
 
 <b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
