@@ -6,21 +6,9 @@
 //
 
 Common = {
-  PLAYERNORTH: 'north',
-  PLAYERSOUTH: 'south',
   NONE: 'none',
-  ACTIVE: 'active player',
-  BOWLS: 'bowls',
-  PICKEDUP: 'picked up',
-  INITIALBOWL: 'initial bowl',
-  LATESTSOWN: 'latest sown',
-  NEXTSOWING: 'next sowing',
-  SCORE: 'score',
   BOWLSTOTAL: 12,
   BONDUCPERBOWL: 4,
+  INITIALPLAYER: 'south',
   NOBOWL: -1,
-  OWARE: 'Oware',
-  OURIL: 'Ouril'
 };
-
-Common.INITIALPLAYER = Common.PLAYERSOUTH;

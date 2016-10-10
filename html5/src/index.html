@@ -386,6 +386,24 @@ If not otherwise stated all graphics (independent of its format) are licensed un
     <form>
       <i>Mind: All selections will be applied on next move or new game.</i>
       <fieldset data-role='controlgroup'>
+        <legend>Start player is&#8230;</legend>
+        <input name='firstplayer' id='firstplayerhuman'
+          checked='checked' type='radio'>
+        <label for='firstplayerhuman'>Human</label>
+        <input name='firstplayer' id='firstplayerai'
+          type='radio'>
+        <label for='firstplayerai'>AI</label>
+      </fieldset>
+      <fieldset data-role='controlgroup'>
+        <legend>Second player is&#8230;</legend>
+        <input name='secondplayer' id='secondplayerhuman'
+          checked='checked' type='radio'>
+        <label for='secondplayerhuman'>Human</label>
+        <input name='secondplayer' id='secondplayerai'
+          type='radio'>
+        <label for='secondplayerai'>AI</label>
+      </fieldset>
+      <fieldset data-role='controlgroup'>
         <legend>Sowing Speed</legend>
         <input name='checkbox-speed' id='sowingspeed'
           checked='checked' type='checkbox'>

@@ -5,65 +5,73 @@
 // @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
 //
 
-var hmi, engine;
+function Hmi() {
+  this.verbose = false;
+}
 
-function engineEventListener( eventReceived ) {
+Hmi.prototype.engineEventListener = function( eventReceived ) {
   var data = eventReceived.data;
   switch (data.eventClass) {
     case 'response':
-      processEngineResponse( eventReceived );
+      this.processEngineResponse( eventReceived );
       break;
     case 'request':
-      processEngineRequest( eventReceived );
+      this.processEngineRequest( eventReceived );
       break;
     default:
-      console.log('Engine used unknown event class');
+      if(this.verbose) console.log('Engine used unknown event class');
   }
 }
 
-function processEngineResponse( eventReceived ) {
+Hmi.prototype.processEngineResponse = function( eventReceived ) {
   var data = eventReceived.data;
   switch (data.state) {
     case 'running':
-      console.log('Engine reported: ' + data.state);
+      if(this.verbose) console.log('Engine reported: ' + data.state);
       break;
     case 'ack_move':
-      console.log('Engine reported ack move from bowl ' + data.bowl);
+      if(this.verbose) console.log('Engine reported ack move from bowl ' + data.bowl);
       break;
     case 'message':
-      console.log('Engine reported message: ' + data.message);
+      if(this.verbose) console.log('Engine reported message: ' + data.message);
       break;
     default:
-      console.log('Engine reported unknown state');
+      if(this.verbose) console.log('Engine reported unknown state');
   }
 }
 
-function processEngineRequest( eventReceived ) {
+Hmi.prototype.processEngineRequest = function( eventReceived ) {
   var data = eventReceived.data;
+  if(this.verbose) console.log('Engine request: ' + data.request);
   switch (data.request) {
+    case 'ai_to_move':
+      this.engine.postMessage({ class: 'request', request: 'action_by_ai',
+        settings: this.getSettings() });
+      break;
+    case 'human_to_move':
+      this.setupBowlSelection(data.board);
+      break;
     case 'redraw':
-      console.log('Engine request: ' + data.request);
-      hmi.redraw(data.board);
-      hmi.setupBowlSelection(data.board);
-      break;
     case 'redraw_sowing':
-      console.log('Engine request: ' + data.request);
-      hmi.redraw(data.board);
-      break;
-    case 'oware':
-      console.log('Game won by player ' + data.winner);
-      hmi.winner = data.winner;
+      this.redraw(data.board);
       break;
     default:
-      console.log('Engine used unknown request');
+      if(this.verbose) console.log('Engine used unknown request');
   }
-}
-
-function Hmi() {
-  this.winner = Common.NONE;
 }
 
 Hmi.prototype.init = function() {
+  if (typeof window.screen.mozLockOrientation != 'undefined') {
+    window.screen.mozLockOrientation("landscape-primary");
+  }
+  var $window = $(window);
+  $window.resize( this.update.bind( this ) );
+  $window.resize();
+  $('#new').click( this.newGame.bind( this ) );
+  $('#rulesoware').click( this.setHeader.bind( this ) );
+  $('#rulesouril').click( this.setHeader.bind( this ) );
+  this.setHeader();
+  $( document ).on( 'pagecontainershow', this.sync.bind( this ));
   var svgEmbed = document.embeds['board'];
   if (typeof svgEmbed != 'undefined') {
     if (typeof svgEmbed.getSVGDocument != 'undefined') {
@@ -79,12 +87,16 @@ Hmi.prototype.init = function() {
         }
         this.bowl[n].text[0] = svgDocument.getElementById(idBowl + 'bonduc15plus1text');
         this.bowl[n].text[1] = svgDocument.getElementById(idBowl + 'bonduc15plus2text');
-        this.score = {};
-        this.score[Common.PLAYERSOUTH] = svgDocument.getElementById('scoresouthvalue');
-        this.score[Common.PLAYERNORTH] = svgDocument.getElementById('scorenorthvalue');
+        this.score = { south: svgDocument.getElementById('scoresouthvalue'),
+          north: svgDocument.getElementById('scorenorthvalue') };
       }
     }
   }
+  this.engine = new Worker('js/controller.js');
+  this.engine.addEventListener('message',
+    this.engineEventListener.bind( this ), false);
+  this.engine.postMessage({ class: 'request', request: 'start',
+    settings: this.getSettings() });
 };
 
 Hmi.prototype.update = function() {
@@ -111,26 +123,26 @@ Hmi.prototype.update = function() {
 };
 
 Hmi.prototype.redraw = function(board) {
-  if (0 == board[Common.PICKEDUP]) {
-    console.log('Active player: ' + board[Common.ACTIVE]);
+  if (0 == board.pickedUp && this.verbose) {
+    console.log('Active player: ' + ['south', 'north'][board.active]);
     var tmp=':';
-    for(var n=11; n>5; --n) tmp += board[Common.BOWLS][n] + ':';
+    for(var n=11; n>5; --n) tmp += board.bowls[n] + ':';
     console.log('Bowls north: ' + tmp);
     tmp=':';
-    for(var n=0; n<6; ++n) tmp += board[Common.BOWLS][n] + ':';
+    for(var n=0; n<6; ++n) tmp += board.bowls[n] + ':';
     console.log('Bowls south: ' + tmp);
   }
 
-  tmp=board[Common.SCORE][Common.PLAYERSOUTH];
-  this.score[Common.PLAYERSOUTH].textContent = '' + tmp +
+  tmp=board.score[0];
+  this.score.south.textContent = '' + tmp +
     (6 == tmp || 9 == tmp ? '.' : '');
-  tmp=board[Common.SCORE][Common.PLAYERNORTH];
-  this.score[Common.PLAYERNORTH].textContent = '' + tmp +
+  tmp=board.score[1];
+  this.score.north.textContent = '' + tmp +
     (6 == tmp || 9 == tmp ? '.' : '');
 
   for(var n=0; n<Common.BOWLSTOTAL; ++n) {
     var bowl = this.bowl[n];
-    var bonduc = board[Common.BOWLS][n];
+    var bonduc = board.bowls[n];
     var bonducShown = bonduc>15 ? 15 : bonduc;
     for(var b=1; b<16; ++b) {
       bowl.bonduc[b].setAttribute('visibility',
@@ -145,10 +157,10 @@ Hmi.prototype.redraw = function(board) {
 Hmi.prototype.setupBowlSelection = function(board) {
   for(var n=0; n<Common.BOWLSTOTAL; ++n) {
     var bowl = this.bowl[n];
-    bowl.element.onclick = (n < (Common.BOWLSTOTAL>>1) &&
-      board[Common.ACTIVE] == Common.PLAYERSOUTH) ||
-      (n >= (Common.BOWLSTOTAL>>1) &&
-      board[Common.ACTIVE] == Common.PLAYERNORTH) ?
+    bowl.element.onclick = ( n < (Common.BOWLSTOTAL>>1) &&
+      0 == board.active ) ||
+      ( n >= (Common.BOWLSTOTAL>>1) &&
+      1 == board.active ) ?
       this.myChoice.bind(this) : null;
   }
 };
@@ -159,9 +171,17 @@ Hmi.prototype.disableBowlSelection = function() {
   }
 };
 
+Hmi.prototype.getSettings = function() {
+  return {
+    sowingspeed: $('#sowingspeed').is(':checked') ? 600 : 10,
+    rules: $('#rulesoware').is(':checked') ? 'Oware' : 'Ouril',
+    playersouth: $('#firstplayerai').is(':checked') ? 'AI' : 'Human',
+    playernorth: $('#secondplayerai').is(':checked') ? 'AI' : 'Human'
+  };
+}
+
 Hmi.prototype.myChoice = function( e ) {
   if (typeof e.currentTarget == 'object') {
-    this.disableBowlSelection();
     var idBowl = e.currentTarget.id;
     var idBonduc = e.target.id;
     // ECMA-262
@@ -170,88 +190,35 @@ Hmi.prototype.myChoice = function( e ) {
     // Mind that depending on ECMA-262: parseInt('08') == 0 might be true
     var bonducInSelectedBowl = Number(idBonduc.slice(-2));
     if(bonducInSelectedBowl>0) {
+      this.disableBowlSelection();
       var selectedBowl = Number(idBowl.slice(-2));
-      console.log('Selected bowl: ' + selectedBowl);
-      var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
-      var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
-      var playerSouth = 'Human';
-      var playerNorth = 'Human';
-      engine.postMessage({ class: 'request', request: 'move',
-        bowl: selectedBowl,
-        playerSouth: playerSouth, playerNorth: playerNorth,
-        sowingspeed: speed, rules: rules });
+      if(this.verbose) console.log('Selected bowl: ' + selectedBowl);
+      this.engine.postMessage({ class: 'request', request: 'move',
+        bowl: selectedBowl, settings: this.getSettings() });
     }
   }
 };
 
 Hmi.prototype.restart = function() {
-  var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
-  var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
-  var playerSouth = 'Human';
-  var playerNorth = 'Human';
-  engine.postMessage({ class: 'request', request: 'restart',
-    playerSouth: playerSouth, playerNorth: playerNorth,
-    sowingspeed: speed, rules: rules });
+  this.engine.postMessage({ class: 'request', request: 'restart',
+    settings: this.getSettings() });
 };
 
-function linkRules( e ) {
-  $('body').pagecontainer('change', $('#rules-page'),
-    { transition: 'pop', changeHash: false });
-};
-
-function backButton( e ) {
-  $('body').pagecontainer('change', $('#game-page'),
-    { transition: 'slide', changeHash: false });
-};
-
-function newGame() {
-  hmi.restart();
+Hmi.prototype.newGame = function() {
+  this.restart();
   $( '#left-panel' ).panel( 'close' );
 }
 
-function setHeader() {
+Hmi.prototype.setHeader = function() {
   $('#myheader').html( $('#rulesoware').is(':checked') ?
     'Oware' : 'Ouril' );
 }
 
-function sync(event, ui) {
+Hmi.prototype.sync = function(event, ui) {
   if( 'game-page' == ui.toPage[0].id ) {
-    hmi.init();
-    var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
-    var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
-    var playerSouth = 'Human';
-    var playerNorth = 'Human';
-    engine.postMessage({ class: 'request', request: 'sync',
-      playerSouth: playerSouth, playerNorth: playerNorth,
-      sowingspeed: speed, rules: rules });
+    this.engine.postMessage({ class: 'request', request: 'sync',
+      settings: this.getSettings() });
   }
-}
-
-function init() {
-  if (typeof window.screen.mozLockOrientation != 'undefined') {
-    window.screen.mozLockOrientation("landscape-primary");
-  }
-  hmi = new Hmi();
-  hmi.init();
-  var $window = $(window);
-  $window.resize( hmi.update );
-  engine = new Worker('js/controller.js');
-  engine.addEventListener('message', function( ev ) {
-    engineEventListener( ev );
-  }, false);
-  var speed = $('#sowingspeed').is(':checked') ? 600 : 10;
-  var rules = $('#rulesoware').is(':checked') ? Common.OWARE : Common.OURIL;
-  var playerSouth = 'Human';
-  var playerNorth = 'Human';
-  engine.postMessage({ class: 'request', request: 'start',
-    playerSouth: playerSouth, playerNorth: playerNorth,
-    sowingspeed: speed, rules: rules });
-  $window.resize();
-  $('#new').click( newGame );
-  $('#rulesoware').click( setHeader );
-  $('#rulesouril').click( setHeader );
-  setHeader();
-  $( document ).on( 'pagecontainershow', sync);
 }
 
 function svgWait() {
@@ -260,9 +227,8 @@ function svgWait() {
     if (typeof svgEmbed.getSVGDocument != 'undefined') {
       var svgDocument = svgEmbed.getSVGDocument();
       if (null != svgDocument) {
-        init();
-      }
-      else {
+        (new Hmi()).init();
+      } else {
         setTimeout( svgWait,5 );
       }
     }
