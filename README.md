@@ -14,6 +14,7 @@ This is an implementation of the two-player abstract perfect-information
 strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
 Via options menu the computer players can be activated playing one or both sides.
 The computer AI player has a Monte-Carlo Tree Search (MCTS) algorithm implemented.
+Per default two human players are selected.
 
 <b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
 is a <em>Mancala (Manquala)</em> game.
