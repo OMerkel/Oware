@@ -8,10 +8,12 @@
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
 * <em>Runs even offline and is installable on platforms like Android, FirefoxOS, iOS.</em>
 
-<b>Keywords, Categories</b> <em>Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
+<b>Keywords, Categories</b> <em>MCTS, Monte-Carlo Tree Search, UCB, Upper Confidence Bounds, UCT, Upper Confidence Bounds Applied to Tress, AI Player, Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
 This is an implementation of the two-player abstract perfect-information
 strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
+Via options menu the computer players can be activated playing one or both sides.
+The computer AI player has a Monte-Carlo Tree Search (MCTS) algorithm implemented.
 
 <b>Oware</b> (in <em>Akan</em> language) - a traditional game from Ghana, Africa,
 is a <em>Mancala (Manquala)</em> game.
@@ -264,6 +266,7 @@ of the <em>Ashanti</em>(<em>Asantehene</em>).
 In <em>Akan</em> language <em>ware</em> means <em>to be married</em>. Various
 sources exist telling legends about couples playing the game Oware
 endlessly - finally marrying to continue playing.
+
 ### Ouril Rules
 <em>Ouril</em> has slightly different rules compared towards Oware.
 
@@ -279,6 +282,16 @@ A <em>Grand Slam</em> is allowed under certain conditions:
   the remaining seeds on their own rows.
 * As an exception a <em>Grand Slam</em> is allowed without additional moves, too,
   if this way the player gets the majority of total harvested seeds winning the game.
+
+### Computer AI Player
+
+Just a few words on the implemented AI player. There is no specific level setting
+implemented yet. It plays quite strong but good human players do definitively still
+have a chance to win. The implemented AI does not play a perfect game.
+
+It does not claim a win explicitly even if it has won already, e.g. by capturing
+more than half of the overall available Bonduc seeds. So you can decide to play
+until the very bitter end has been reached.
 
 ### Contributors / Authors
 
