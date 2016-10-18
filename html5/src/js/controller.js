@@ -48,7 +48,7 @@ Controller.prototype.processHmiRequest = function( eventReceived ) {
   switch (data.request) {
     case 'action_by_ai':
       this.updateSettings( data.settings );
-      var actionInfo = this.uct.getActionInfo( this.board, 60000, 5000, 50, 70 );
+      var actionInfo = this.uct.getActionInfo( this.board, 300000, 5000, 50, 70 );
       this.move(actionInfo.action);
       if(this.verbose) {
         console.log(actionInfo.info);
