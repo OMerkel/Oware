@@ -3,10 +3,11 @@
 
 * <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src
 * <em>Also published in</em> <a href="https://marketplace.firefox.com/app/oware"><img align="middle" width="150px" src="https://marketplace.cdn.mozilla.net/media/fireplace/img/pretty/marketplace_logo.png" /></a>
+* <em>Android APK available for install</em> <img align="top" width="32" src="res/android.gif" /> https://github.com/OMerkel/Oware/releases/tag/release_0.6
+    * requires minimum Android 4.4.2 (API-19)
 * <em>Runs in various browsers on</em>
     * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
-* <em>Runs even offline and is installable on platforms like Android, FirefoxOS, iOS.</em>
 
 <b>Keywords, Categories</b> <em>MCTS, Monte-Carlo Tree Search, UCB, Upper Confidence Bounds, UCT, Upper Confidence Bounds Applied to Tress, AI Player, Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
