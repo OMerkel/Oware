@@ -287,9 +287,9 @@ A <em>Grand Slam</em> is allowed under certain conditions:
 
 ### Computer AI Player
 
-Just a few words on the implemented AI player. There is no specific level setting
+Just a few words on the implemented AI computer player. There is no specific level setting
 implemented yet. It plays quite strong but good human players do definitively still
-have a chance to win. The implemented AI does not play a perfect game.
+have a chance to win against the computer opponent. The implemented AI does not play a perfect game.
 
 It does not claim a win explicitly even if it has won already, e.g. by capturing
 more than half of the overall available Bonduc seeds. So you can decide to play
