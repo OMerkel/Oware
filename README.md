@@ -9,7 +9,7 @@
     * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
     * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
 
-<b>Keywords, Categories</b> <em>MCTS, Monte-Carlo Tree Search, UCB, Upper Confidence Bounds, UCT, Upper Confidence Bounds Applied to Tress, AI Player, Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
+<b>Keywords, Categories</b> <em>MCTS, Monte-Carlo Tree Search, UCB, Upper Confidence Bounds, UCT, Upper Confidence Bounds Applied to Trees, AI Player, Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
 This is an implementation of the two-player abstract perfect-information
 strategy board games Oware and Ouril for HTML5/Javascript/CSS platform.
