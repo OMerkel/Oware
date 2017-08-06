@@ -31,17 +31,17 @@ Controller.prototype.hmiEventListener = function( eventReceived ) {
       this.processHmiRequest( eventReceived );
       break;
     default:
-      if(this.verbose) console.log('Hmi used unknown event class');
+      if (this.verbose) console.log('Hmi used unknown event class');
   }
-}
+};
 
 Controller.prototype.processHmiResponse = function( eventReceived ) {
   var data = eventReceived.data;
   switch (data.state) {
     default:
-      if(this.verbose) console.log('Hmi reported unknown state');
+      if (this.verbose) console.log('Hmi reported unknown state');
   }
-}
+};
 
 Controller.prototype.processHmiRequest = function( eventReceived ) {
   var data = eventReceived.data;
