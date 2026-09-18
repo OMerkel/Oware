@@ -1,175 +1,156 @@
 //
-// Copyright (c) 2016 Oliver Merkel
-// All rights reserved.
+// Copyright (c) 2016, 2026 Oliver Merkel. MIT License.
 //
-// @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
+// Worker-owned game orchestration: the sole writer of board state.
 //
 
-importScripts('board.js');
-importScripts('uct/uctnode.js');
-importScripts('uct/uct.js');
+import { Board } from './board.js';
+import { PLAYERS, RULES } from './common.js';
+import { Uct } from './uct/uct.js';
 
-function Controller() {
-  this.board = new Board();
-  this.board.setup();
-  this.uct = new Uct();
-  this.verbose = false;
-  this.settings = {
-    playerSouth : 'Human',
-    playerNorth : 'Human',
-    sowingSpeed : 600
+const AI_MOVE_BUDGET = {
+  maxIterations: 300000,
+  maxTime: 5000,
+  maxDepthSimulation: 50,
+  maxLookAhead: 70,
+};
+const AI_OPENING_BUDGET = {
+  maxIterations: 60000,
+  maxTime: 3000,
+  maxDepthSimulation: 50,
+  maxLookAhead: 70,
+};
+
+function toSettings(rawSettings) {
+  return {
+    playerSouth: rawSettings.playersouth,
+    playerNorth: rawSettings.playernorth,
+    sowingSpeed: rawSettings.sowingspeed,
+    rules: rawSettings.rules,
   };
 }
 
-Controller.prototype.hmiEventListener = function( eventReceived ) {
-  var data = eventReceived.data;
-  switch (data.class) {
-    case 'response':
-      this.processHmiResponse( eventReceived );
-      break;
-    case 'request':
-      this.processHmiRequest( eventReceived );
-      break;
-    default:
-      if (this.verbose) console.log('Hmi used unknown event class');
+export class Controller {
+  constructor(post = (message) => self.postMessage(message), createUct = () => new Uct()) {
+    this.board = new Board();
+    this.uct = createUct();
+    this.verbose = false;
+    this.post = post;
+    this.settings = {
+      playerSouth: PLAYERS.HUMAN,
+      playerNorth: PLAYERS.HUMAN,
+      sowingSpeed: 600,
+      rules: RULES.OWARE,
+    };
   }
-};
 
-Controller.prototype.processHmiResponse = function( eventReceived ) {
-  var data = eventReceived.data;
-  switch (data.state) {
-    default:
-      if (this.verbose) console.log('Hmi reported unknown state');
-  }
-};
-
-Controller.prototype.processHmiRequest = function( eventReceived ) {
-  var data = eventReceived.data;
-  switch (data.request) {
-    case 'action_by_ai':
-      this.updateSettings( data.settings );
-      var actionInfo = this.uct.getActionInfo( this.board, 300000, 5000, 50, 70 );
-      this.move(actionInfo.action);
-      if(this.verbose) {
-        console.log(actionInfo.info);
-      }
-      break;
-    case 'move':
-      this.updateSettings( data.settings );
-      this.move(data.bowl);
-      break;
-    case 'start':
-    case 'restart':
-      this.board.setup();
-      this.updateSettings( data.settings );
-      this.draw();
-      if ( 'AI' == this.settings.playerSouth ) {
-        var actionInfo = this.uct.getActionInfo( this.board, 60000, 3000, 50, 70 );
-        this.move(actionInfo.action);
-        if(this.verbose) {
-          console.log(actionInfo.info);
-        }
-      } else {
-        self.postMessage({ eventClass: 'request', request: 'human_to_move',
-          board: this.board.copy(),
-        });
-      }
-      /* if(this.verbose) {
-        var moves = this.board.getActions(), out = '';
-        for(var index=0; index<moves.length; ++index) {
-          out += moves[index] + (index<moves.length-1 ? ', ' : '');
-        }
-        console.log(out);
-        console.log('Which bowl to move?');
-        var actionInfo = this.uct.getActionInfo( this.board, 60000, 3000, 50, 70 );
-        console.log(actionInfo.action);
-        console.log(actionInfo.info);
-      } */
-      break;
-    case 'sync':
-      this.updateSettings( data.settings );
-      this.draw();
-      break;
-    default:
-      if(this.verbose) console.log('Hmi used unknown request');
-  }
-}
-
-Controller.prototype.updateSettings = function ( settings ) {
-  this.settings = {
-    playerSouth : settings.playersouth,
-    playerNorth : settings.playernorth,
-    sowingSpeed : settings.sowingspeed
-  };
-  this.board.setRules( settings.rules );
-};
-
-Controller.prototype.draw = function () {
-  self.postMessage({ eventClass: 'request', request: 'redraw',
-    board: this.board.copy(),
-  });
-};
-
-Controller.prototype.drawSowing = function () {
-  self.postMessage({ eventClass: 'request', request: 'redraw_sowing',
-    board: this.board.copy(),
-  });
-};
-
-Controller.prototype.examineResult = function () {
-  this.board.renderScore();
-  this.board.nextPlayer();
-};
-
-Controller.prototype.distribute = function () {
-  if(this.board.hasPickedUp()) {
-    this.drawSowing();
-    this.board.sow();
-    setTimeout( this.distribute.bind(this), this.settings.sowingSpeed );
-  } else {
-    this.examineResult();
-    this.draw();
-    /* if(this.verbose) {
-      var moves = this.board.getActions(), out = '';
-      for(var index=0; index<moves.length; ++index) {
-        out += moves[index] + (index<moves.length-1 ? ', ' : '');
-      }
-      console.log(out);
-      console.log('Which bowl to move?');
-      var actionInfo = this.uct.getActionInfo( this.board, 60000, 5000, 50, 70 );
-      console.log(actionInfo.action);
-      console.log(actionInfo.info);
+  handleHmiEvent(eventReceived) {
+    const data = eventReceived.data;
+    if (data.class === 'request') {
+      this.processHmiRequest(data);
+    } else if (this.verbose) {
+      console.log('Hmi used unknown event class');
     }
-     */
-    if( ( 0 == this.board.active && 'AI' == this.settings.playerSouth ) ||
-        ( 1 == this.board.active && 'AI' == this.settings.playerNorth ) ) {
-      self.postMessage({ eventClass: 'request', request: 'ai_to_move',
-        board: this.board.copy(),
-      });
+  }
+
+  processHmiRequest(data) {
+    switch (data.request) {
+      case 'action_by_ai':
+        this.updateSettings(data.settings);
+        this.moveWithAi(AI_MOVE_BUDGET);
+        break;
+      case 'move':
+        this.updateSettings(data.settings);
+        this.move(data.bowl);
+        break;
+      case 'start':
+      case 'restart':
+        this.startGame(data.settings);
+        break;
+      case 'sync':
+        this.updateSettings(data.settings);
+        this.draw();
+        break;
+      default:
+        if (this.verbose) console.log('Hmi used unknown request');
+    }
+  }
+
+  startGame(rawSettings) {
+    this.board.setup();
+    this.updateSettings(rawSettings);
+    this.draw();
+    if (this.settings.playerSouth === PLAYERS.AI) {
+      this.moveWithAi(AI_OPENING_BUDGET);
     } else {
-      self.postMessage({ eventClass: 'request', request: 'human_to_move',
-        board: this.board.copy(),
-      });
+      this.post({ eventClass: 'request', request: 'human_to_move', board: this.board.state });
     }
   }
-};
 
-Controller.prototype.move = function ( bowl ) {
-  var validMove = false;
-  var moves = this.board.getActions();
-  for(var index=0; index<moves.length; ++index) {
-    validMove |= bowl == moves[index];
+  moveWithAi(budget) {
+    const actionInfo = this.uct.getActionInfo(
+      this.board,
+      budget.maxIterations,
+      budget.maxTime,
+      budget.maxDepthSimulation,
+      budget.maxLookAhead
+    );
+    if (this.verbose) console.log(actionInfo.info);
+    this.move(actionInfo.action);
   }
-  if (validMove) {
-    this.board.pickUp(bowl);
-    this.distribute();
-  } else {
+
+  updateSettings(rawSettings) {
+    this.settings = toSettings(rawSettings);
+    this.board.setRules(this.settings.rules);
+  }
+
+  draw() {
+    this.post({ eventClass: 'request', request: 'redraw', board: this.board.state });
+  }
+
+  drawSowing() {
+    this.post({ eventClass: 'request', request: 'redraw_sowing', board: this.board.state });
+  }
+
+  distribute() {
+    if (this.board.hasPickedUp()) {
+      this.drawSowing();
+      this.board.sow();
+      setTimeout(() => this.distribute(), this.settings.sowingSpeed);
+      return;
+    }
+    this.board.examineResult();
     this.draw();
+    const activePlayer =
+      this.board.active === 0 ? this.settings.playerSouth : this.settings.playerNorth;
+    this.post({
+      eventClass: 'request',
+      request: activePlayer === PLAYERS.AI ? 'ai_to_move' : 'human_to_move',
+      board: this.board.state,
+    });
   }
-};
 
-Controller.prototype.init = function() {
-  addEventListener('message', this.hmiEventListener.bind( this ), false);
-};
+  move(bowl) {
+    const isValidMove = this.board.getActions().includes(bowl);
+    if (isValidMove) {
+      this.board.pickUp(bowl);
+      this.distribute();
+    } else {
+      this.draw();
+    }
+  }
 
-(new Controller()).init();
+  init() {
+    addEventListener('message', (event) => this.handleHmiEvent(event), false);
+  }
+}
+
+/* c8 ignore start -- worker bootstrap only runs in a real Worker context */
+if (
+  typeof WorkerGlobalScope !== 'undefined' &&
+  typeof self !== 'undefined' &&
+  self instanceof WorkerGlobalScope
+) {
+  new Controller().init();
+}
+/* c8 ignore stop */

@@ -1,14 +1,16 @@
 //
-// Copyright (c) 2016 Oliver Merkel
-// All rights reserved.
-//
-// @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
+// Copyright (c) 2016, 2026 Oliver Merkel. MIT License.
 //
 
-Common = {
-  NONE: 'none',
-  BOWLSTOTAL: 12,
-  BONDUCPERBOWL: 4,
-  INITIALPLAYER: 'south',
-  NOBOWL: -1,
-};
+export const BOWLS_TOTAL = 12;
+export const SEEDS_PER_BOWL = 4;
+export const NO_BOWL = -1;
+
+export const SOUTH = 0;
+export const NORTH = 1;
+
+export const RULES = Object.freeze({ OWARE: 'Oware', OURIL: 'Ouril' });
+export const PLAYERS = Object.freeze({ HUMAN: 'Human', AI: 'AI' });
+
+export const SOUTH_ROW = Object.freeze([0, 1, 2, 3, 4, 5]);
+export const NORTH_ROW = Object.freeze([6, 7, 8, 9, 10, 11]);

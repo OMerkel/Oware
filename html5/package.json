@@ -1,0 +1,32 @@
+{
+  "name": "oware",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Oware / Ouril Mancala game - browser single-page application.",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "e2e": "playwright test",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "serve": "http-server src -p 8080 -c-1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.14",
+    "@playwright/test": "^1.48.0",
+    "@vitest/coverage-v8": "^2.1.4",
+    "http-server": "^14.1.1",
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.4"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "@biomejs/biome@2.5.14": true
+  }
+}

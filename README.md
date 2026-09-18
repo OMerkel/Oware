@@ -1,13 +1,12 @@
-<img alt="UCThello icon" width="64" src="html5/src/img/icons/oware128.png" /> Oware / Ouril
-=============
+# <img alt="Oware icon" width="64" src="html5/src/img/icons/oware128.png" /> Oware / Ouril
 
-* <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> http://omerkel.github.io/Oware/html5/src
+* <em>Start an online</em> <b>Oware</b> <em>or</em> <b>Ouril</b> <em>session on</em> <http://omerkel.github.io/Oware/html5/src>
 * <em><a href="https://www.facebook.com/OwareOuril">Oware / Ouril on Facebook</a></em>
-* <em>Android APK available for install</em> <img align="top" width="32" src="res/android.gif" /> https://github.com/OMerkel/Oware/releases/tag/release_0.6
-    * requires minimum Android 4.4.2 (API-19)
+* <em>Android APK available for install</em> <img align="top" width="32" alt="Android APK icon" src="res/android.gif" /> <https://github.com/OMerkel/Oware/releases/tag/release_0.6>
+  * requires minimum Android 4.4.2 (API-19)
 * <em>Runs in various browsers on</em>
-    * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
-    * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
+  * <em>desktop systems like BSDs, Linux, Win, MacOS and</em>
+  * <em>mobile platforms like Android, FirefoxOS, iOS.</em>
 
 <b>Keywords, Categories</b> <em>MCTS, Monte-Carlo Tree Search, UCB, Upper Confidence Bounds, UCT, Upper Confidence Bounds Applied to Trees, AI Player, Board Games, Games/Entertainment, Mobile, Abstract Game, Perfect-Information, 2-player Strategy Game, Mancala, Oware, Ouril</em>
 
@@ -94,9 +93,9 @@ can be played.
 
 These rules will be described inside the Oware application as well.
 
-### Oware Rules
+## Oware Rules
 
-#### Game Components
+### Game Components
 
 This Oware implementation uses a game board with 12 bowls in
 total - consisting of 2 rows having 6 bowls each. Initially
@@ -106,13 +105,13 @@ each bowl holds 4 Bonduc seeds.
 | --- |
 | <i>Initial board position in Oware, 12 bowls containing 4 Caesalpinia Bonduc seeds each, one player starts turns in lower row ranged from bowl 1 to bowl 6, other player starts turns in upper row ranged from bowl 7 to 12.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-#### Objective
+### Objective
 
 Objective of the game is to get a higher score than the opponent.
 This is done by harvesting more seeds than the opponent.
 The harvested seeds represent the score.
 
-#### Turn Sequence
+### Turn Sequence
 
 Players' turn alternates between the two players. A player's turn
 consists of the following phases
@@ -121,13 +120,13 @@ consists of the following phases
 2. Sowing, followed by
 3. Harvesting.
 
-#### Picking Up Seeds
+### Picking Up Seeds
 
 The player starts own sowing turns from any non empty bowl of
 his choice in the row next to his own side. The whole content
 of the bowl is picked up leaving the bowl empty.
 
-#### Sowing
+### Sowing
 
 Direction of game play is counter clockwise here in a circular
 sowing path. If reaching bowl 12 then continue on bowl 1 if
@@ -144,7 +143,7 @@ the consecutive bowls in counter clockwise direction.
 | --- |
 | <i>Example of a player's opening turn: Assume the player decides to pick up all 4 seeds from bowl 5. Finally the turn ends by sowing in counter clockwise direction in bowl 9 here.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-#### Harvesting
+### Harvesting
 
 A player will score (also called <em>harvesting</em>) on
 sowing the last seed of his turn into an opponent's
@@ -155,7 +154,6 @@ out of game play and scoring these.
 | <img height="370" ondragstart="return false;" alt="How to harvest? Own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting1.jpg" /> |
 | --- |
 | <i>How to harvest? Assume the board situation shown in the diagram above. Opponent scored 2 points already. The active player can decide to pick up seeds from either bowl 1, bowl 2, bowl 4, or bowl 6. Only bowl 4 and bowl 6 will allow to harvest seeds as follows&#8230;<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
-
 
 | <img height="370" ondragstart="return false;" alt="Variant: Picking up the 7 seeds from bowl 4, own work, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_harvesting2.jpg" /> |
 | --- |
@@ -173,7 +171,7 @@ directly adjacent.
 | --- |
 | <i>Variant: Alternatively picking up the 6 seeds from bowl 6, then sowing these will distribute the last seed into bowl 12. Since bowl 12 contains 3 seeds now these will be harvested. Previous bowl 11 being directly adjacent is scored with 2 seeds, too. Bowl 10 does contain neither 2 nor 3 seeds so stop harvesting. Player's score is increased by these 5 seeds in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-#### Special Situations and Rules
+### Special Situations and Rules
 
 Bowls containing a huge amount of seeds (like more than eleven seeds)
 are called <em>Kroo</em>. In case of picking up a <em>Kroo</em> the
@@ -185,14 +183,13 @@ this bowl will remain empty in the end of this player's turn.
 | --- |
 | <i>Bowl 4 is a <em>Kroo</em> with a high amount of 16 seeds.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
-
 | <img height="370" ondragstart="return false;" alt="Player decides to pick up the Kroo containing 16 Bonducs here. Reaching the initial bowl it is skipped. Bowls 9, 8, and 7 are scored with 9 seeds in total, Oliver Merkel, Creative Commons License, This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." src="http://omerkel.github.io/Oware/res/board_kroo2.jpg" /> |
 | --- |
 | <i>Player decides to pick up the <em>Kroo</em> containing 16 Bonducs here. As seeding is reaching the initial bowl it is skipped. The last Bonduc is sown in opponent's bowl 9 and the player scores 3 seeds. Previous opponent's bowls 8 and 7 are scored, too. Thus the player scores additional 9 seeds in total.<br />Own work, Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://omerkel.github.io/Oware/res/cc-by-nc-sa-40-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</i> |
 
 Taking and scoring all remaining seeds of the opponent's row
 completely at once is called a <em>Grand Slam</em>. Such a
-<em>Grand Slam</em> is strictly forbidden in <em>Oware</em> 
+<em>Grand Slam</em> is strictly forbidden in <em>Oware</em>
 and the player performing this action will lose immediately
 even if the player gets the majority of total
 seeds this way. Thus after each scoring at least one seed
@@ -214,7 +211,7 @@ The player scoring higher wins.
 
 Such that the game could end as a draw on equal scores.
 
-### Typical Oware Game Material
+## Typical Oware Game Material
 
 If you are looking forward to getting a typical <b>Oware game</b> (<em>Ghana</em>)
 then the chance is quite high that the board shall be made of
@@ -258,7 +255,7 @@ Surely some priceless unique or antique Oware sets can be found up to the
 size of a whole table. Watch out and find some of these gems using
 your preferred web search engine.
 
-### Oware and its Origin
+## Oware and its Origin
 
 With given rules as presented here today's name of the game is <em>Oware</em>.
 Oware is an <em>Akan</em> culture term. Commonly reported Oware is
@@ -269,7 +266,8 @@ In <em>Akan</em> language <em>ware</em> means <em>to be married</em>. Various
 sources exist telling legends about couples playing the game Oware
 endlessly - finally marrying to continue playing.
 
-### Ouril Rules
+## Ouril Rules
+
 <em>Ouril</em> has slightly different rules compared towards Oware.
 
 Picking up <em>single seeds</em> from own bowls is allowed only as long as none other
@@ -285,7 +283,7 @@ A <em>Grand Slam</em> is allowed under certain conditions:
 * As an exception a <em>Grand Slam</em> is allowed without additional moves, too,
   if this way the player gets the majority of total harvested seeds winning the game.
 
-### Computer AI Player
+## Computer AI Player
 
 Just a few words on the implemented AI computer player. There is no specific level setting
 implemented yet. It plays quite strong but good human players do definitively still
@@ -295,11 +293,11 @@ It does not claim a win explicitly even if it has won already, e.g. by capturing
 more than half of the overall available Bonduc seeds. So you can decide to play
 until the very bitter end has been reached.
 
-### Contributors / Authors
+## Contributors / Authors
 
 <table>
   <tr>
-    <td><p>Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This image is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.    
+    <td><p>Oliver Merkel,<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This image is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
     </p>
     </td>
     <td width="50%"><img width="100%" ondragstart="return false;" alt="Oliver Merkel, Creative Commons License, This image is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License." src="html5/src/img/oliver_lion.jpg" /></td>

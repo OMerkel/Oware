@@ -1,68 +1,89 @@
 //
-// Copyright (c) 2016 Oliver Merkel
-// All rights reserved.
-//
-// @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
+// Copyright (c) 2016, 2026 Oliver Merkel. MIT License.
 //
 
-function Uct() {}
+import { UctNode } from './uctnode.js';
 
-Uct.prototype.getActionInfo = function ( board, maxIterations, maxTime,
-  maxDepthSimulation, maxLookAhead ) {
-  var result = null;
-  var root = new UctNode(null, board, null);
-  if (root.unexamined.length > 1) {
-    var startTime = (new Date()).getTime(),
-      timeLimit = startTime + maxTime;
-    var blockSize = 50;
-    var nodesVisted = 0;
-    for(var iterations=0; iterations<maxIterations &&
-      (new Date()).getTime()<timeLimit; iterations+=blockSize) {
-      for(var i=0; i<blockSize; ++i) {
-        var node = root,
-          variantBoard = board.copy(),
-          lookAhead = maxLookAhead;
-        /* Selection */
-        while (node.unexamined.length == 0 && node.children.length > 0 &&
-          lookAhead > 0) {
-          node = node.selectChild();
-          variantBoard.doAction(node.action);
-          --lookAhead;
-        }
-        /* Expansion */
-        if (node.unexamined.length > 0) {
-          var j = Math.floor(Math.random() * node.unexamined.length);
-          variantBoard.doAction(node.unexamined[j]);
-          node = node.addChild(variantBoard, j);
-        }
-        /* Simulation */
-        var actions = variantBoard.getActions(),
-          depth = maxDepthSimulation;
-        while(actions.length > 0 && depth > 0 && lookAhead > 0) {
-          variantBoard.doAction(actions[Math.floor(Math.random() * actions.length)]);
-          ++nodesVisted;
-          actions = variantBoard.getActions();
-          --depth;
-          --lookAhead;
-        }
-        /* Backpropagation */
-        var result = variantBoard.getResult();
-        while(node) {
-          node.update(result);
-          node = node.parentNode;
+function randomIndex(length) {
+  return Math.floor(Math.random() * length);
+}
+
+function selectAndExpand(root, board, maxLookAhead) {
+  let node = root;
+  const variantBoard = board.copy();
+  let lookAhead = maxLookAhead;
+
+  while (node.unexamined.length === 0 && node.children.length > 0 && lookAhead > 0) {
+    node = node.selectChild();
+    variantBoard.doAction(node.action);
+    lookAhead -= 1;
+  }
+
+  if (node.unexamined.length > 0) {
+    const index = randomIndex(node.unexamined.length);
+    variantBoard.doAction(node.unexamined[index]);
+    node = node.addChild(variantBoard, index);
+  }
+
+  return { node, variantBoard, lookAhead };
+}
+
+function simulate(variantBoard, depth, lookAhead) {
+  let actions = variantBoard.getActions();
+  let remainingDepth = depth;
+  let remainingLookAhead = lookAhead;
+  let nodesVisited = 0;
+  while (actions.length > 0 && remainingDepth > 0 && remainingLookAhead > 0) {
+    variantBoard.doAction(actions[randomIndex(actions.length)]);
+    nodesVisited += 1;
+    actions = variantBoard.getActions();
+    remainingDepth -= 1;
+    remainingLookAhead -= 1;
+  }
+  return nodesVisited;
+}
+
+function backpropagate(node, result) {
+  let current = node;
+  while (current) {
+    current.update(result);
+    current = current.parentNode;
+  }
+}
+
+export class Uct {
+  getActionInfo(board, maxIterations, maxTime, maxDepthSimulation, maxLookAhead) {
+    const root = new UctNode(null, board, null);
+
+    if (root.unexamined.length > 1) {
+      const startTime = Date.now();
+      const timeLimit = startTime + maxTime;
+      const blockSize = 50;
+      let nodesVisited = 0;
+
+      for (
+        let iterations = 0;
+        iterations < maxIterations && Date.now() < timeLimit;
+        iterations += blockSize
+      ) {
+        for (let i = 0; i < blockSize; i += 1) {
+          const { node, variantBoard, lookAhead } = selectAndExpand(root, board, maxLookAhead);
+          nodesVisited += simulate(variantBoard, maxDepthSimulation, lookAhead);
+          backpropagate(node, variantBoard.getResult());
         }
       }
+
+      const duration = Date.now() - startTime;
+      return {
+        action: root.mostVisitedChild().action,
+        info: `${Math.floor((nodesVisited * 1000.0) / duration)} nodes/sec examined.`,
+      };
     }
-    var duration = (new Date()).getTime() - startTime;
-    result = { action : root.mostVisitedChild().action,
-      info: Math.floor(nodesVisted * 1000.0 / duration) +
-      " nodes/sec examined." };
-  } else if (1 == root.unexamined.length) {
-    result = { action : root.unexamined[0],
-      info: "Just 1 action available." };
-  } else {
-    result = { action : null,
-      info: "No action available." };    
+
+    if (root.unexamined.length === 1) {
+      return { action: root.unexamined[0], info: 'Just 1 action available.' };
+    }
+
+    return { action: null, info: 'No action available.' };
   }
-  return result;
-};
+}

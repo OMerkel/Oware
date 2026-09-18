@@ -1,143 +1,203 @@
 //
-// Copyright (c) 2016 Oliver Merkel
-// All rights reserved.
+// Copyright (c) 2016, 2026 Oliver Merkel. MIT License.
 //
-// @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
+// Pure Oware/Ouril board state transitions, plus a thin mutable adapter
+// class (`Board`) used by the UCT engine and the worker controller.
 //
 
-importScripts('common.js');
+import {
+  BOWLS_TOTAL,
+  NO_BOWL,
+  NORTH,
+  NORTH_ROW,
+  RULES,
+  SEEDS_PER_BOWL,
+  SOUTH,
+  SOUTH_ROW,
+} from './common.js';
 
-function Board() {}
+/** Creates the initial immutable board state. */
+export function createBoard(rules = RULES.OWARE) {
+  return {
+    active: SOUTH,
+    bowls: Array(BOWLS_TOTAL).fill(SEEDS_PER_BOWL),
+    pickedUp: 0,
+    initialBowl: NO_BOWL,
+    latestSown: NO_BOWL,
+    nextSowing: NO_BOWL,
+    score: [0, 0],
+    rules,
+  };
+}
 
-Board.prototype.setup = function () {
-  this.active = 0;
-  this.bowls = [];
-  for(var i=0; i<Common.BOWLSTOTAL; ++i) {
-    this.bowls[i] = Common.BONDUCPERBOWL;
+/** Returns a board with a different rule set applied. */
+export function setRules(board, rules) {
+  return { ...board, rules };
+}
+
+function nextBowlIndex(initialBowl, bowl) {
+  const index = (bowl + 1) % BOWLS_TOTAL;
+  return index === initialBowl ? (index + 1) % BOWLS_TOTAL : index;
+}
+
+/** Picks up all seeds from `bowl`, leaving it empty. */
+export function pickUp(board, bowl) {
+  return {
+    ...board,
+    pickedUp: board.bowls[bowl],
+    bowls: board.bowls.map((seeds, index) => (index === bowl ? 0 : seeds)),
+    initialBowl: bowl,
+    latestSown: NO_BOWL,
+    nextSowing: nextBowlIndex(bowl, bowl),
+  };
+}
+
+/** True while seeds picked up on this turn still need to be sown. */
+export function hasPickedUp(board) {
+  return board.pickedUp > 0;
+}
+
+/** Sows exactly one seed into the next bowl along the sowing path. */
+export function sowOnce(board) {
+  const bowlIndex = board.nextSowing;
+  return {
+    ...board,
+    pickedUp: board.pickedUp - 1,
+    bowls: board.bowls.map((seeds, index) => (index === bowlIndex ? seeds + 1 : seeds)),
+    latestSown: bowlIndex,
+    nextSowing: nextBowlIndex(board.initialBowl, bowlIndex),
+  };
+}
+
+/** Harvests 2- or 3-seed bowls backwards from the latest sown bowl. */
+export function harvest(board) {
+  const scoreLimitIndex = board.latestSown >= BOWLS_TOTAL / 2 ? BOWLS_TOTAL / 2 : 0;
+  const landedInOpponentRow =
+    (board.active === SOUTH && scoreLimitIndex !== 0) ||
+    (board.active === NORTH && scoreLimitIndex === 0);
+  if (!landedInOpponentRow) {
+    return board;
   }
-  this.pickedUp = 0;
-  this.initialBowl = Common.NOBOWL;
-  this.latestSown = Common.NOBOWL;
-  this.nextSowing = Common.NOBOWL;
-  this.score = [ 0, 0 ];
-  this.rules = Common.OWARE;
-};
-
-Board.prototype.copy = function () {
-  var board = new Board();
-  board.active = this.active;
-  board.bowls = [];
-  for(var i=0; i<Common.BOWLSTOTAL; ++i) {
-    board.bowls[i] = this.bowls[i];
+  const bowls = board.bowls.slice();
+  const score = [...board.score];
+  let bowlIndex = board.latestSown;
+  while (bowlIndex >= scoreLimitIndex && (bowls[bowlIndex] === 2 || bowls[bowlIndex] === 3)) {
+    score[board.active] += bowls[bowlIndex];
+    bowls[bowlIndex] = 0;
+    bowlIndex -= 1;
   }
-  board.pickedUp = this.pickedUp;
-  board.initialBowl = this.initialBowl;
-  board.latestSown = this.latestSown;
-  board.nextSowing = this.nextSowing;
-  board.score = [ this.score[0], this.score[1] ];
-  board.rules = this.rules;
-  return board;
-};
+  return { ...board, bowls, score };
+}
 
-Board.prototype.setRules = function ( rules ) {
-  this.rules = rules;
-};
+/** Legal bowls the active player may pick up from. */
+export function getActions(board) {
+  const own = board.active === SOUTH ? SOUTH_ROW : NORTH_ROW;
+  const threshold = board.rules === RULES.OWARE ? 0 : 1;
+  const result = own.filter((bowl) => board.bowls[bowl] > threshold);
+  return result.length > 0 ? result : own.filter((bowl) => board.bowls[bowl] === 1);
+}
 
-Board.prototype.nextPlayer = function() {
-  if( 'Oware' == this.rules || 0 != this.getActions().length ) {
-    this.active = 1 - this.active;
+/** Advances to the next player, honoring the Ouril extra-turn exception. */
+export function advanceTurn(board) {
+  const mustRepeatTurn = board.rules !== RULES.OWARE && getActions(board).length === 0;
+  return mustRepeatTurn ? board : { ...board, active: 1 - board.active };
+}
+
+/** Applies harvesting followed by turn advancement. */
+export function examineResult(board) {
+  return advanceTurn(harvest(board));
+}
+
+/** Picks up, fully sows, harvests and advances the turn in one step. */
+export function doAction(board, bowl) {
+  let next = pickUp(board, bowl);
+  while (hasPickedUp(next)) {
+    next = sowOnce(next);
   }
-};
+  return examineResult(next);
+}
 
-Board.prototype.nextBowl = function ( bowl ) {
-  var bowlIndex = (++bowl) % Common.BOWLSTOTAL;
-  if(bowlIndex == this.initialBowl) {
-    bowlIndex = (++bowlIndex) % Common.BOWLSTOTAL;
+/** UCT reward vector: a decisive win/loss once a player passes 24 seeds. */
+export function getResult(board) {
+  if (board.score[SOUTH] > 24) return [0, 1];
+  if (board.score[NORTH] > 24) return [1, 0];
+  return [0.01, 0.01];
+}
+
+/**
+ * Thin mutable adapter around the pure board functions above, used by the
+ * UCT search tree and the worker controller which expect stateful,
+ * step-by-step access (for animated sowing) as well as instant moves.
+ */
+export class Board {
+  #state;
+
+  constructor(state = createBoard()) {
+    this.#state = state;
   }
-  return bowlIndex;
-};
 
-Board.prototype.pickUp = function ( bowl ) {
-  this.pickedUp = this.bowls[bowl];
-  this.bowls[bowl] = 0;
-  this.initialBowl = bowl;
-  this.latestSown = Common.NOBOWL;
-  this.nextSowing = this.nextBowl(bowl);
-};
-
-Board.prototype.hasPickedUp = function () {
-  return this.pickedUp > 0;
-};
-
-Board.prototype.sow = function () {
-  var bowlIndex = this.nextSowing;
-  --this.pickedUp;
-  ++this.bowls[bowlIndex];
-  this.latestSown = bowlIndex;
-  this.nextSowing = this.nextBowl(bowlIndex);
-};
-
-Board.prototype.renderScore = function () {
-  var bowlIndex = this.latestSown;
-  var scoreLimitIndex = bowlIndex >= (Common.BOWLSTOTAL>>1) ?
-    (Common.BOWLSTOTAL>>1) : 0;
-  if ( (0 == this.active && scoreLimitIndex != 0) ||
-       (1 == this.active && scoreLimitIndex == 0) ) {
-    while ( bowlIndex >= scoreLimitIndex &&
-      ( this.bowls[bowlIndex] == 2 || this.bowls[bowlIndex] == 3 ) ) {
-      this.score[this.active] += this.bowls[bowlIndex];
-      this.bowls[bowlIndex] = 0;
-      --bowlIndex;
-    }
+  copy() {
+    return new Board(this.#state);
   }
-};
 
-Board.prototype.getActions = function () {
-  var result = [];
-  var singles = [];
-  var tmp = [ [ 0, 1, 2, 3, 4, 5 ], [ 6, 7, 8, 9, 10, 11 ] ][this.active];
-  for(var index=0; index<tmp.length; ++index) {
-    if ( ('Oware' == this.rules ? 0 : 1) < this.bowls[tmp[index]] ) {
-      result[result.length] = tmp[index];
-    } else if ( 1 == this.bowls[tmp[index]] ) {
-      singles[singles.length] = tmp[index];
-    }
+  setup(rules = RULES.OWARE) {
+    this.#state = createBoard(rules);
   }
-  result = 0 == result.length ? singles : result;
-  return result;
-};
 
-Board.prototype.examineResult = function () {
-  this.renderScore();
-  this.nextPlayer();
-};
-
-Board.prototype.distribute = function () {
-  if(this.hasPickedUp()) {
-    this.sow();
-    this.distribute();
-  } else {
-    this.examineResult();
+  setRules(rules) {
+    this.#state = setRules(this.#state, rules);
   }
-};
 
-Board.prototype.doAction = function ( bowl ) {
-  this.pickUp(bowl);
-  this.distribute();
-};
+  pickUp(bowl) {
+    this.#state = pickUp(this.#state, bowl);
+  }
 
-Board.prototype.getResult = function () {
-  return this.score[0] > 24 ? [ 0, 1 ] :
-    this.score[1] > 24 ? [ 1, 0 ] : [ 0.01, 0.01 ];
-};
+  hasPickedUp() {
+    return hasPickedUp(this.#state);
+  }
 
-Board.prototype.repr = function() {
-  console.log('Active player: ' + ['south', 'north'][this.active]);
-  var tmp=':';
-  for(var n=11; n>5; --n) tmp += this.bowls[n] + ':';
-  console.log('Bowls north: ' + tmp);
-  tmp=':';
-  for(var n=0; n<6; ++n) tmp += this.bowls[n] + ':';
-  console.log('Bowls south: ' + tmp);
-  console.log( this.score[0] + '/' + this.score[1] );
-};
+  sow() {
+    this.#state = sowOnce(this.#state);
+  }
+
+  examineResult() {
+    this.#state = examineResult(this.#state);
+  }
+
+  doAction(bowl) {
+    this.#state = doAction(this.#state, bowl);
+  }
+
+  getActions() {
+    return getActions(this.#state);
+  }
+
+  getResult() {
+    return getResult(this.#state);
+  }
+
+  get active() {
+    return this.#state.active;
+  }
+
+  get bowls() {
+    return this.#state.bowls;
+  }
+
+  get score() {
+    return this.#state.score;
+  }
+
+  get pickedUp() {
+    return this.#state.pickedUp;
+  }
+
+  get rules() {
+    return this.#state.rules;
+  }
+
+  /** Plain, structured-clone-friendly snapshot of the current state. */
+  get state() {
+    return this.#state;
+  }
+}

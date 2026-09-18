@@ -1,0 +1,12 @@
+{
+  "name": "oware-repo-docs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Repository-wide documentation tooling (markdown linting) for the Oware project.",
+  "scripts": {
+    "lint:md": "markdownlint-cli2 \"**/*.md\""
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.23.2"
+  }
+}
