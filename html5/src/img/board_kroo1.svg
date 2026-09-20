@@ -28,7 +28,469 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
   <title
      id="title3060">Oware</title>
   <defs
-     id="defs4" />
+     id="defs4">
+    <g id="bowl_bonduc00">
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc04_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc00.png"
+         id="bowl_bonduc00_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc01">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc01_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_11_svg"
+           cx="135"
+           cy="140"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc01.png"
+         id="bowl_bonduc01_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc02">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc02_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_21_svg"
+           cx="125"
+           cy="140"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_22_svg"
+           cx="180"
+           cy="165"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc02.png"
+         id="bowl_bonduc02_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc03">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc03_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_31_svg"
+           cx="120"
+           cy="125"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_32_svg"
+           cx="180"
+           cy="140"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_33_svg"
+           cx="145"
+           cy="190"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc03.png"
+         id="bowl_bonduc03_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc04">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc04_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_41_svg"
+           cx="130"
+           cy="120"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_42_svg"
+           cx="185"
+           cy="175"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_43_svg"
+           cx="130"
+           cy="190"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_44_svg"
+           cx="195"
+           cy="110"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc04.png"
+         id="bowl_bonduc04_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc05">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc05_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_51_svg"
+           cx="110"
+           cy="100"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_52_svg"
+           cx="195"
+           cy="185"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_53_svg"
+           cx="120"
+           cy="200"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_54_svg"
+           cx="200"
+           cy="105"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_55_svg"
+           cx="150"
+           cy="150"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc05.png"
+         id="bowl_bonduc05_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc06">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc06_svg"
+           cx="140"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_61_svg"
+           cx="110"
+           cy="90"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_62_svg"
+           cx="195"
+           cy="185"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_63_svg"
+           cx="125"
+           cy="205"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_64_svg"
+           cx="200"
+           cy="105"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_65_svg"
+           cx="90"
+           cy="150"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_66_svg"
+           cx="150"
+           cy="150"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc06.png"
+         id="bowl_bonduc06_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc07">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc07_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_71_svg"
+           cx="110"
+           cy="90"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_72_svg"
+           cx="190"
+           cy="210"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_73_svg"
+           cx="120"
+           cy="205"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_74_svg"
+           cx="190"
+           cy="85"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_75_svg"
+           cx="85"
+           cy="150"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_76_svg"
+           cx="210"
+           cy="150"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_77_svg"
+           cx="145"
+           cy="150"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc07.png"
+         id="bowl_bonduc07_png"
+         x="0"
+         y="0" />
+    </g>
+    <g id="bowl_bonduc15">
+      <g>
+        <ellipse
+           style="fill:#cccccc;stroke:#111111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc15_svg"
+           cx="150"
+           cy="150"
+           rx="130"
+           ry="130" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f1_svg"
+           cx="110"
+           cy="90"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f2_svg"
+           cx="190"
+           cy="210"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f3_svg"
+           cx="120"
+           cy="205"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f4_svg"
+           cx="190"
+           cy="85"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f5_svg"
+           cx="85"
+           cy="150"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f6_svg"
+           cx="210"
+           cy="150"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f7_svg"
+           cx="145"
+           cy="150"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f8_svg"
+           cx="150"
+           cy="90"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_f9_svg"
+           cx="175"
+           cy="220"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_fa_svg"
+           cx="140"
+           cy="215"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_fb_svg"
+           cx="210"
+           cy="80"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_fc_svg"
+           cx="70"
+           cy="180"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_fd_svg"
+           cx="230"
+           cy="190"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_fe_svg"
+           cx="225"
+           cy="155"
+           rx="32"
+           ry="32" />
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="bowl_bonduc_ff_svg"
+           cx="65"
+           cy="135"
+           rx="32"
+           ry="32" />
+      </g>
+      <image
+         width="300"
+         height="287"
+         xlink:href="trou-bonduc15.png"
+         id="bowl_bonduc15_png"
+         x="0"
+         y="0" />
+    </g>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -112,6 +574,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
       <g
          id="scoresouth"
          transform="translate(300,250)">
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="score_south_svg"
+           cx="15"
+           cy="15"
+           rx="13"
+           ry="13" />
         <image
            xlink:href="bonduc01-256.png"
            width="34"
@@ -132,6 +601,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
       <g
          transform="matrix(-1,0,0,-1,-300,-250)"
          id="scorenorth">
+        <ellipse
+           style="fill:#999999;stroke:#111111;stroke-width:2.63158;stroke-linecap:round;stroke-linejoin:round"
+           id="score_north_svg"
+           cx="15"
+           cy="15"
+           rx="13"
+           ry="13" />
         <image
            xlink:href="bonduc01-256.png"
            id="scorenorthbead"
@@ -153,15 +629,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
     <g
        id="playersouth">
       <g
-         id="bowl00"
+         id="bowl00g"
          transform="translate(80,334) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc06.png"
-           id="bowl00bonduc06"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl00"
+           xlink:href="#bowl_bonduc06" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -177,15 +651,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl01"
+         id="bowl01g"
          transform="translate(256,336) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc00.png"
-           id="bowl01bonduc00"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl01"
+           xlink:href="#bowl_bonduc00" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -201,15 +673,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl02"
+         id="bowl02g"
          transform="translate(433,338) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc01.png"
-           id="bowl02bonduc01"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl02"
+           xlink:href="#bowl_bonduc01" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -225,15 +695,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl03"
+         id="bowl03g"
          transform="translate(614,336) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc15.png"
-           id="bowl03bonduc15"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl03"
+           xlink:href="#bowl_bonduc15" />
         <g
            id="bowl03bonduc15plus"
            transform="translate(150,150)">
@@ -273,15 +741,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl04"
+         id="bowl04g"
          transform="translate(796,340) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc00.png"
-           id="bowl04bonduc00"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl04"
+           xlink:href="#bowl_bonduc00" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -297,15 +763,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl05"
+         id="bowl05g"
          transform="translate(976,342) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc04.png"
-           id="bowl05bonduc04"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl05"
+           xlink:href="#bowl_bonduc04" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -323,15 +787,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
     </g>    <g
        id="playernorth">
       <g
-         id="bowl11"
+         id="bowl11g"
          transform="translate(79,148) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc00.png"
-           id="bowl11bonduc00"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl11"
+           xlink:href="#bowl_bonduc00" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -347,15 +809,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl10"
+         id="bowl10g"
          transform="translate(258,150) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc02.png"
-           id="bowl10bonduc02"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl10"
+           xlink:href="#bowl_bonduc02" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -371,15 +831,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl09"
+         id="bowl09g"
          transform="translate(438,154) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc07.png"
-           id="bowl09bonduc07"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl09"
+           xlink:href="#bowl_bonduc07" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -395,15 +853,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl08"
+         id="bowl08g"
          transform="translate(618,155) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc01.png"
-           id="bowl08bonduc01"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl08"
+           xlink:href="#bowl_bonduc01" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -419,15 +875,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl07"
+         id="bowl07g"
          transform="translate(800,158) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc01.png"
-           id="bowl07bonduc01"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl07"
+           xlink:href="#bowl_bonduc01" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
@@ -443,15 +897,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
         </g>
       </g>
       <g
-         id="bowl06"
+         id="bowl06g"
          transform="translate(982,160) scale(0.57)">
-        <image
-           width="300"
-           height="287"
-           xlink:href="trou-bonduc01.png"
-           id="bowl06bonduc01"
+        <use
            x="0"
-           y="0" />
+           y="0"
+           id="bowl06"
+           xlink:href="#bowl_bonduc01" />
         <g
             transform="translate(190,275)">
           <path d="m 70,-20 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
